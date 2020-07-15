@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Section from "../components/globals/section/Section"
 import ContactForm from "../components/ContactForm"
