@@ -1,9 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-// import { graphql } from "gatsby"
-// import Img from "gatsby-image"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import SEO from "../components/seo"
+import Gallery from "../components/gallery"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 
@@ -15,7 +16,7 @@ const About = ({ data }) => {
         <Section style={{ width: "100vw", margin: "4rem auto 1rem auto" }}>
           <HeaderLogo />
         </Section>
-        {/* <Img fluid={data.Img1.childImageSharp.fluid} /> */}
+        <Img fluid={data.Img1.childImageSharp.fluid} />
         <Section style={{ width: "80vw", margin: "4rem auto" }}>
           <p>
             Hi! I’m Rina. I’m a wife, toddler wrestling champ, cookbook author,
@@ -68,6 +69,7 @@ const About = ({ data }) => {
           </p>
         </Section>
       </AboutWrapper>
+      <Gallery />
     </Layout>
   )
 }
@@ -81,14 +83,14 @@ const AboutWrapper = styled.div`
 
 export default About
 
-// export const query = graphql`
-//   query {
-//     Img1: file(relativePath: { eq: "" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1920) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    Img1: file(relativePath: { eq: "La-Dolce-Rina-About.jpg" }) {
+      childImageSharp {
+        fluid(quality: 80, maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

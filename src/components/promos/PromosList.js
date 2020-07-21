@@ -16,7 +16,7 @@ const Promo = () => {
             content
             src {
               childImageSharp {
-                fluid(maxWidth: 300) {
+                fluid(quality: 90, maxWidth: 300) {
                   ...GatsbyImageSharpFluid
                 }
               }
