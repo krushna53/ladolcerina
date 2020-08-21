@@ -34,7 +34,7 @@ const Cookbook = () => {
         <Section style={{ width: "100vw", margin: "4rem auto 1rem auto" }}>
           <HeaderLogo />
         </Section>
-        <Section style={{ flexDirection: "column" }}>
+        <Section style={{ width: "100vw", flexDirection: "column" }}>
           <div className="box box-title">
             <h1>Bushels and Feasts</h1>
             <h3>
@@ -113,7 +113,9 @@ const Cookbook = () => {
             </p>
             <p>Buy eCookbook now!</p>
           </div>
-          <Intro />
+          <div className="box">
+            <Intro />
+          </div>
         </Section>
       </StyledCookbook>
     </Layout>
@@ -122,12 +124,14 @@ const Cookbook = () => {
 
 const StyledCookbook = styled.div`
   .box {
+    width: 80vw;
     margin: 2rem auto;
     p {
       margin-bottom: 1rem;
     }
   }
   .bio-gallery {
+    width: 100vw;
     margin: 0rem auto;
     display: flex;
     flex-wrap: wrap;

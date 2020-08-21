@@ -56,7 +56,6 @@ const IntroWrapper = styled.div`
     margin-top: 1rem;
   }
   @media (max-width: 768px) {
-    width: 100vw;
     .introBox,
     .contactBox {
       flex-basis: 100%;
