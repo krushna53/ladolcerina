@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
-import Promos from "../components/promos/PromosList"
+import RecipeList from "../components/recipes/RecipeList"
 import Intro from "../components/Intro"
 import Gallery from "../components/gallery"
 
@@ -21,7 +21,7 @@ const Recipes = () => {
           flexWrap: "wrap",
         }}
       >
-        <Promos />
+        <RecipeList />
       </Section>
       <Intro />
       <Gallery />

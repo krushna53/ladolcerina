@@ -11,6 +11,13 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      recipes: allRecipesJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
 
@@ -18,6 +25,15 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `promos/${node.slug}`,
       component: path.resolve("./src/templates/promos-template.js"),
+      context: {
+        slug: node.slug,
+      },
+    })
+  })
+  data.recipes.edges.forEach(({ node }) => {
+    createPage({
+      path: `recipes/${node.slug}`,
+      component: path.resolve("./src/templates/recipes-template.js"),
       context: {
         slug: node.slug,
       },

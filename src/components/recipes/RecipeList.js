@@ -4,10 +4,10 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Promo = () => {
+const Recipe = ({ style }) => {
   const data = useStaticQuery(graphql`
     query {
-      promos: allPromosJson(filter: { free: { eq: "yes" } }) {
+      recipes: allRecipesJson(filter: { free: { eq: "yes" } }) {
         edges {
           node {
             id
@@ -26,34 +26,38 @@ const Promo = () => {
       }
     }
   `)
-  const promos = data.promos.edges
+  const recipes = data.recipes.edges
   return (
-    <PromoWrapper>
-      {promos.map(({ node }, index) => {
+    <RecipesWrapper>
+      {recipes.map(({ node }, index) => {
         return (
-          <div className="promo" key={index}>
-            <AniLink className="link" fade to={`/promos/${node.slug}`}>
-              <Img className="Img" fluid={node.src.childImageSharp.fluid} />
+          <div className="recipe" key={index}>
+            <AniLink className="link" fade to={`/recipes/${node.slug}`}>
+              <Img
+                style={style}
+                className="Img"
+                fluid={node.src.childImageSharp.fluid}
+              />
             </AniLink>
             <div className="recipe-title">
-              <AniLink fade to={`/promos/${node.slug}`}>
+              <AniLink fade to={`/recipes/${node.slug}`}>
                 <h4>{node.title}</h4>
               </AniLink>
             </div>
           </div>
         )
       })}
-    </PromoWrapper>
+    </RecipesWrapper>
   )
 }
 
-const PromoWrapper = styled.div`
+const RecipesWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  .promo {
+  .recipe {
     flex-basis: 43%;
     margin: 0.5rem;
     position: relative;
@@ -101,4 +105,4 @@ const PromoWrapper = styled.div`
   }
 `
 
-export default Promo
+export default Recipe

@@ -19,14 +19,27 @@ const BackgroundSection = ({ className, children }) => (
     render={data => {
       const imageData = data.desktop.childImageSharp.fluid
       return (
-        <BackgroundImage
-          Tag="section"
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#ffffff`}
-        >
-          {children}
-        </BackgroundImage>
+        <>
+          <BackgroundImage
+            Tag="section"
+            className={className}
+            fluid={imageData}
+            backgroundColor={`#ffffff`}
+          >
+            {children}
+          </BackgroundImage>
+          <p
+            style={{
+              fontSize: "12px",
+              margin: "0 auto",
+              color: "black",
+              fontStyle: "italic",
+              textAlign: "center",
+            }}
+          >
+            Mostly healthy recipes inspired by my sweet and savory life.
+          </p>
+        </>
       )
     }}
   />

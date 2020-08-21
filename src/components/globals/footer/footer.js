@@ -1,13 +1,13 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { FaInstagram, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
+import { FaInstagram, FaFacebookSquare, FaPinterest } from "react-icons/fa"
 
 class Footer extends Component {
   state = {
     icons: [
       {
         id: 2,
-        icon: <FaInstagram className="icon facebook-instagram" />,
+        icon: <FaInstagram className="icon instagram-icon" />,
         path: "#",
       },
       {
@@ -17,7 +17,7 @@ class Footer extends Component {
       },
       {
         id: 1,
-        icon: <FaTwitterSquare className="icon facebook-icon" />,
+        icon: <FaPinterest className="icon pinterest-icon" />,
         path: "#",
       },
     ],

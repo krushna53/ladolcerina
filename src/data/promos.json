@@ -1,134 +1,23 @@
 [
   {
     "id": "1",
+    "free": "no",
     "title": "10 Dessert Recipes",
     "slug": "dessert-recipes",
     "src": "../images/promos/la-rina-dolce-dessert-promo-01.jpg",
     "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
     "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      "Get your free Dessert eBook from our new cookbook Bushels and Feasts, containing 10 irresistible, gluten and grain-free, real food desserts!",
+      "• Gluten Free",
+      "• Grain Free",
+      "• Refined Sugar Free",
+      "• Paleo-friendly",
+      "• Delicious, honest, real food desserts that celebrate each and every ingredient."
     ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
-    ]
-  },
-  {
-    "id": "2",
-    "title": "Ultimate Cheese Spread",
-    "slug": "cheese-spread",
-    "src": "../images/promos/la-rina-dolce-cheese-promo-01.jpg",
-    "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
-    "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
-    ]
-  },
-  {
-    "id": "3",
-    "title": "Tasting Guide",
-    "slug": "tasting-guide",
-    "src": "../images/promos/la-rina-dolce-tasting-promo-01.jpg",
-    "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
-    "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
-    ]
-  },
-  {
-    "id": "4",
-    "title": "Meats & Sauces",
-    "slug": "meat-sauce",
-    "src": "../images/promos/la-rina-dolce-meat-sauce-promo-01.jpg",
-    "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
-    "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
-    ]
-  },
-  {
-    "id": "5",
-    "title": "The Only Steak Recipe",
-    "slug": "steak-recipe",
-    "src": "../images/promos/la-rina-dolce-steak-promo-01.jpg",
-    "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
-    "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
-    ]
-  },
-  {
-    "id": "6",
-    "title": "12 Flavored Butters",
-    "slug": "flavored-butters",
-    "src": "../images/promos/la-rina-dolce-butter-promo-01.jpg",
-    "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
-    "content": [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    ],
-    "offer": [
-      "Triple-Cream Brie Cheesecake with Mango and Passion Fruit",
-      "Strawberry-Champagne Sorbet with Lemongrass and Lime",
-      "Brown Butter Pistachio and Lemon Financiers",
-      "Chocolate-Coconut Pot de Creme with Passion Fruit Caramel",
-      "Frozen Lemon Parfait with Vanilla-Creme Fraiche and Blueberries",
-      "Salted Butter Maple-Caramel Chocolate Mousse",
-      "Dark Chocolate-Orange Souffle",
-      "Honey-Butter Chocolate-Banana Cream Crepes",
-      "Stuffed Apples with Goat’s Cheese, Bacon and Walnuts",
-      "Vanilla-Lavender Pot de Crème"
+    "offer": ["10 Bushels and Feasts Dessert Recipes"],
+    "testimonial": [
+      "BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu trained chef Rina Thoma and international bestselling cookbook author Sarah Fragoso. The result is a celebration of real food; beautiful, delicious, market-fresh, family meals free from gluten and grains and filled with healthy fats and decadent desserts.",
+      "-Famed Nobu executive chef, Matt Raso"
     ]
   }
 ]

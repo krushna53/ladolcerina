@@ -1,0 +1,60 @@
+[
+  {
+    "id": "2",
+    "free": "yes",
+    "title": "Ultimate Cheese Spread",
+    "slug": "cheese-spread",
+    "src": "../images/promos/la-rina-dolce-cheese-promo-01.jpg",
+    "summary": [
+      "In this simple guide, we give our best advice on beef cuts, cooking times, marinades, and more!",
+      "Choose your steak",
+      "Bone-in steaks are wonderful for broiling and grilling. 1-inch boneless top loin steaks (which is the larger side of the t-bone and porterhouse) are a superb choice. This steakhouse favorite has many names like sirloin, short loin, NY strip, Delmonico, strip steak etc., and loved by cooks and chefs alike for its marbling and incredible meaty, beefy flavor.",
+      "Steaks from the rib (ribeyes are juicy, fatty, and fantastic), loin, and tenderloin are also excellent choices. Steaks from the chuck and round can also be excellent, but requires some knowledge in choosing the right cuts.",
+      "Filet mignon, 1 ½ inch center cut beef tenderloin steaks take about 4-5 minutes per side and in a category of their own. This cut is leaner and less fatty, thus less flavorful, but famous for its supreme velvety tenderness. Tenderloin steaks benefit from not only flavored butters, but especially luscious sauces."
+    ],
+    "dish": "",
+    "text1": "",
+    "ingredients1": [
+      "4 HOUR MARINADE:",
+      "• ¼ cup extra-virgin olive oil",
+      "• 2 sprigs rosemary, leaves removed",
+      "• 5 cloves of garlic, crushed",
+      "• 1 tablespoon lemon juice, or lemon zest",
+      "• pinch chili flakes",
+      "• kosher salt and freshly ground pepper, to taste"
+    ]
+  },
+  {
+    "id": "5",
+    "free": "yes",
+    "title": "The Only Steak Recipe",
+    "slug": "steak-recipe",
+    "src": "../images/promos/la-rina-dolce-steak-promo-01.jpg",
+    "summary": [
+      "In this simple guide, we give our best advice on beef cuts, cooking times, marinades, and more!",
+      "Choose your steak",
+      "Bone-in steaks are wonderful for broiling and grilling. 1-inch boneless top loin steaks (which is the larger side of the t-bone and porterhouse) are a superb choice. This steakhouse favorite has many names like sirloin, short loin, NY strip, Delmonico, strip steak etc., and loved by cooks and chefs alike for its marbling and incredible meaty, beefy flavor.",
+      "Steaks from the rib (ribeyes are juicy, fatty, and fantastic), loin, and tenderloin are also excellent choices. Steaks from the chuck and round can also be excellent, but requires some knowledge in choosing the right cuts.",
+      "Filet mignon, 1 ½ inch center cut beef tenderloin steaks take about 4-5 minutes per side and in a category of their own. This cut is leaner and less fatty, thus less flavorful, but famous for its supreme velvety tenderness. Tenderloin steaks benefit from not only flavored butters, but especially luscious sauces."
+    ],
+    "dish": "The Best Rosemary Garlic Steak Marinade",
+    "text1": "Here is a simple 4 hour marinade that consists of garlic, rosemary, olive oil, lemon juice, and a few chili flakes, and sure to add incredible flavor to any steak.",
+    "ingredients1": [
+      "4 HOUR MARINADE:",
+      "• ¼ cup extra-virgin olive oil",
+      "• 2 sprigs rosemary, leaves removed",
+      "• 5 cloves of garlic, crushed",
+      "• 1 tablespoon lemon juice, or lemon zest",
+      "• pinch chili flakes",
+      "• kosher salt and freshly ground pepper, to taste"
+    ],
+    "ingredients2": [
+      "FOR THE STEAK:",
+      "• 4 steaks, 1-inch thick, top loin/sirloin/NY strip",
+      "• avocado oil, or choice of fat for high-heat cooking",
+      "• 2 tablespoons regular butter for basting",
+      "• Maldon sea salt flakes, optional",
+      "• To prepare the marinade, combine all of the ingredients in a blender"
+    ]
+  }
+]

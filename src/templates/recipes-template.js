@@ -4,12 +4,19 @@ import Layout from "../components/layout"
 import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
-import SignupForm from "../components/SignupForm"
 import BackgroundImage from "gatsby-background-image"
 import Gallery from "../components/gallery"
 
-const Promos = ({ data }) => {
-  const { title, content, offer, details, src, testimonial } = data.promoItem
+const Recipes = ({ data }) => {
+  const {
+    title,
+    src,
+    summary,
+    dish,
+    text1,
+    ingredients1,
+    ingredients2,
+  } = data.recipeItem
 
   return (
     <Layout>
@@ -26,47 +33,53 @@ const Promos = ({ data }) => {
             Tag="section"
             fluid={src.childImageSharp.fluid}
           >
-            <Banner title={title}>
-              <ul className="details">
-                {details.map((value, id) => {
-                  return <li key={id}>• {value}</li>
-                })}
-              </ul>
-            </Banner>
+            <Banner title={title}></Banner>
           </BackgroundImage>
         </Section>
-        <Section style={{ width: "80vw", margin: "4rem auto" }}>
-          <div className="box form-container">
-            <div className="summary-container">
-              <ul className="contentList">
-                <h4>Summary:</h4>
-                {content.map((value, id) => {
-                  return <li key={id}>{value}</li>
-                })}
-              </ul>
-              <p className="cta">Join our mailing list to get these recipes!</p>
+        <Section style={{ width: "80vw" }}>
+          <div className="box">
+            <ul className="contentList">
+              <h4>Summary:</h4>
+              {summary.map((value, id) => {
+                return <li key={id}>{value}</li>
+              })}
+            </ul>
+          </div>
+        </Section>
+        <Section
+          style={{
+            width: "80vw",
+            margin: "1rem auto 4rem auto",
+            alignItems: "center",
+          }}
+        >
+          <div className="recipe-container">
+            <div className="ingredients">
+              <h4>{dish}</h4>
+              <p>{text1}</p>
             </div>
-            <div className="summary-container">
-              <div className="form ">
-                <SignupForm />
+            {!ingredients1 ? (
+              ""
+            ) : (
+              <div className="ingredients">
+                <ul className="ingredientsList">
+                  {ingredients1.map((value, id) => {
+                    return <li key={id}> {value}</li>
+                  })}
+                </ul>
               </div>
-            </div>
-          </div>
-          <div className="box">
-            <h4>What you get:</h4>
-            <ul className="contentList">
-              {offer.map((value, id) => {
-                return <li key={id}>{value}</li>
-              })}
-            </ul>
-          </div>
-          <div className="box">
-            <h4>Testimonial:</h4>
-            <ul className="contentList">
-              {testimonial.map((value, id) => {
-                return <li key={id}>{value}</li>
-              })}
-            </ul>
+            )}
+            {!ingredients2 ? (
+              ""
+            ) : (
+              <div className="ingredients">
+                <ul className="ingredientsList">
+                  {ingredients2.map((value, id) => {
+                    return <li key={id}> {value}</li>
+                  })}
+                </ul>
+              </div>
+            )}
           </div>
         </Section>
       </Wrapper>
@@ -77,13 +90,9 @@ const Promos = ({ data }) => {
 
 export const query = graphql`
   query($slug: String!) {
-    promoItem: promosJson(slug: { eq: $slug }) {
+    recipeItem: recipesJson(slug: { eq: $slug }) {
       id
       title
-      slug
-      content
-      offer
-      details
       src {
         childImageSharp {
           fluid(quality: 90, maxWidth: 2000) {
@@ -91,24 +100,20 @@ export const query = graphql`
           }
         }
       }
-      testimonial
+      slug
+      summary
+      dish
+      text1
+      ingredients1
+      ingredients2
     }
   }
 `
 
 const Wrapper = styled.div`
   color: var(--darkGray);
-  .form-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .summary-container {
-      flex-basis: 45%;
-    }
-  }
   .box {
     flex-basis: 100%;
-    margin-bottom: 2rem;
   }
   .hero {
     width: 100%;
@@ -125,24 +130,19 @@ const Wrapper = styled.div`
     li {
       margin: 0.5rem;
       display: inline;
-      font-size: 0.8rem;
     }
   }
   h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-  }
-  .cta {
-    font-style: italic;
-    font-weight: bold;
-    color: var(--mainColor);
-    margin-top: 0.5rem;
+    color: var(--darkGray);
   }
   .contentList {
     margin-top: 1rem;
     font-family: "Open Sans";
     li {
       list-style-type: none;
+      margin-bottom: 1rem;
     }
   }
   .form {
@@ -151,10 +151,9 @@ const Wrapper = styled.div`
     flex-basis: 45%;
     padding: 1rem;
   }
-  .offers {
-    flex-basis: 45%;
-    .offersList {
-      width: 100%;
+  .ingredients {
+    margin-bottom: 2rem;
+    .ingredientsList {
       margin: 0rem auto;
       li {
         list-style-type: none;
@@ -165,7 +164,7 @@ const Wrapper = styled.div`
     .details {
       width: 100%;
     }
-    .offers {
+    .ingredients {
       flex-basis: 100%;
     }
     .list {
@@ -179,12 +178,7 @@ const Wrapper = styled.div`
       flex-basis: 100%;
       padding: 1rem;
     }
-    .form-container {
-      .summary-container {
-        flex-basis: 90%;
-      }
-    }
   }
 `
 
-export default Promos
+export default Recipes

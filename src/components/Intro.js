@@ -33,6 +33,11 @@ const Intro = () => {
             <li>DOLCE</li>
             <li>RINA</li>
           </ul>
+          <p className="about-info">
+            <strong>Hi! I’m Rina.</strong> I’m a wife, mom, cookbook author, and
+            chef. Join me as I explore my Italian roots and relive my most
+            treasured experiences through the dishes I create.
+          </p>
         </div>
         <div className="contactBox">
           <ContactForm />
@@ -63,6 +68,11 @@ const IntroWrapper = styled.div`
       color: var(--mainColor);
       line-height: 5rem;
     }
+  }
+  .about-info {
+    width: 90%;
+    padding-left: 0.4rem;
+    margin-top: 1rem;
   }
   @media (max-width: 768px) {
     .introBox,

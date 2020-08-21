@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaInstagram, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa"
+import { FaInstagram, FaFacebookSquare, FaPinterest } from "react-icons/fa"
 
 class NavBarLinks extends Component {
   state = {
@@ -27,6 +27,11 @@ class NavBarLinks extends Component {
         text: "cookbook",
       },
       {
+        id: 3,
+        path: "/promos/dessert-recipes",
+        text: "Free eBook",
+      },
+      {
         id: 4,
         path: "/contact",
         text: "contact",
@@ -47,18 +52,18 @@ class NavBarLinks extends Component {
         })}
         <ul className="social">
           <li>
-            <a href="#">
+            <a href="/">
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/">
               <FaFacebookSquare />
             </a>
           </li>
           <li>
-            <a href="#">
-              <FaTwitterSquare />
+            <a href="/">
+              <FaPinterest />
             </a>
           </li>
         </ul>
@@ -81,7 +86,7 @@ const LinkWrapper = styled.ul`
     padding: 0.5rem 1.2rem;
     color: var(--darkGray);
     font-family: "Poppins";
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -119,7 +124,7 @@ const LinkWrapper = styled.ul`
     .nav-link {
       padding: 1rem 1.2rem;
       font-family: "Poppins";
-      font-size: 1.5rem;
+      font-size: 1rem;
       font-weight: bold;
     }
     .nav-link:hover {
