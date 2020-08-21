@@ -128,7 +128,6 @@ const StyledCookbook = styled.div`
     }
   }
   .bio-gallery {
-    width: 100vw;
     margin: 0rem auto;
     display: flex;
     flex-wrap: wrap;
