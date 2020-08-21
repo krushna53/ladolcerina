@@ -8,12 +8,12 @@ class Footer extends Component {
       {
         id: 2,
         icon: <FaInstagram className="icon instagram-icon" />,
-        path: "#",
+        path: "https://www.instagram.com/la_dolce_rina/",
       },
       {
         id: 1,
         icon: <FaFacebookSquare className="icon facebook-icon" />,
-        path: "#",
+        path: "https://www.facebook.com/rina.thoma",
       },
       {
         id: 1,
@@ -61,7 +61,7 @@ const FooterWrapper = styled.div`
   a {
     color: var(--white);
     font-size: 2rem;
-    line-height: 6rem;
+    line-height: 8rem;
     margin-right: 5px;
   }
   @media (max-width: 768px) {

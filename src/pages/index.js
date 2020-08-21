@@ -16,7 +16,9 @@ const IndexPage = () => (
     <Section style={{ width: "100vw", margin: "0rem auto" }}>
       <Boxes />
     </Section>
-    <Intro />
+    <Section style={{ width: "100vw", margin: "0rem auto" }}>
+      <Intro />
+    </Section>
     <Gallery />
   </Layout>
 )

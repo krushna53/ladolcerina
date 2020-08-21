@@ -52,12 +52,12 @@ class NavBarLinks extends Component {
         })}
         <ul className="social">
           <li>
-            <a href="/">
+            <a href="https://www.instagram.com/la_dolce_rina/">
               <FaInstagram />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.facebook.com/rina.thoma">
               <FaFacebookSquare />
             </a>
           </li>

@@ -99,8 +99,17 @@ const RecipesWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-    .promo {
+    .recipe {
       flex-basis: 100%;
+    }
+    .recipe-title {
+      h4 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+    }
+    .Img {
+      height: 200px;
     }
   }
 `

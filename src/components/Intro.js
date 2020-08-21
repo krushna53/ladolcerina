@@ -1,32 +1,12 @@
 import React from "react"
-// import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Section from "../components/globals/section/Section"
 import ContactForm from "../components/ContactForm"
-// import BackgroundImage from "gatsby-background-image"
 
 const Intro = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     img1: file(relativePath: { eq: "lines-bg.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000) {
-  //           ...GatsbyImageSharpFluid_tracedSVG
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
   return (
     <IntroWrapper>
-      <Section
-        style={{
-          width: "90vw",
-          margin: "2rem auto",
-          justifyContent: "space-around",
-          alignItems: "center",
-        }}
-      >
+      <Section style={{ alignItems: "center" }}>
         <div className="introBox">
           <ul>
             <li>LA</li>
@@ -48,10 +28,11 @@ const Intro = () => {
 }
 
 const IntroWrapper = styled.div`
+  margin: 2rem auto;
+  justify-content: space-between;
   .introBox,
   .contactBox {
-    flex-basis: 50%;
-    font-family: "Poppins";
+    flex-basis: 40%;
   }
   .contactBox {
     #message {
@@ -75,9 +56,15 @@ const IntroWrapper = styled.div`
     margin-top: 1rem;
   }
   @media (max-width: 768px) {
+    width: 100vw;
     .introBox,
     .contactBox {
-      flex-basis: 90%;
+      flex-basis: 100%;
+      margin: 0 auto;
+      ul {
+        font-size: 4rem;
+        line-height: 2.5rem;
+      }
     }
   }
 `

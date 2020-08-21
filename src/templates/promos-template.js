@@ -117,7 +117,7 @@ const Wrapper = styled.div`
     background-size: cover;
   }
   .details {
-    background: var(--darkGray);
+    background: var(--mainColor);
     width: 60%;
     margin: 0rem auto;
     padding: 0.3rem 0.5rem 0.5rem 0.5rem;
@@ -125,7 +125,6 @@ const Wrapper = styled.div`
     li {
       margin: 0.5rem;
       display: inline;
-      font-size: 0.8rem;
     }
   }
   h4 {
