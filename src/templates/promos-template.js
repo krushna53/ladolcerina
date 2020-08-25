@@ -9,15 +9,7 @@ import BackgroundImage from "gatsby-background-image"
 import DessertGallery from "../components/dessertGallery"
 
 const Promos = ({ data }) => {
-  const {
-    title,
-    content,
-    gallery,
-    offer,
-    details,
-    src,
-    testimonial,
-  } = data.promoItem
+  const { title, content, offer, details, src, testimonial } = data.promoItem
 
   return (
     <Layout>
@@ -101,7 +93,6 @@ export const query = graphql`
           }
         }
       }
-      gallery
       testimonial
     }
   }
