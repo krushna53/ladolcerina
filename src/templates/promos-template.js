@@ -7,7 +7,6 @@ import Banner from "../components/globals/header/Banner"
 import SignupForm from "../components/SignupForm"
 import BackgroundImage from "gatsby-background-image"
 import DessertGallery from "../components/dessertGallery"
-import Gallery from "../components/gallery"
 
 const Promos = ({ data }) => {
   const {
@@ -174,7 +173,8 @@ const Wrapper = styled.div`
   }
   @media (max-width: 768px) {
     .details {
-      width: 100%;
+      width: 90%;
+      margin: 0rem auto;
     }
     .offers {
       flex-basis: 100%;
@@ -192,7 +192,7 @@ const Wrapper = styled.div`
     }
     .form-container {
       .summary-container {
-        flex-basis: 90%;
+        flex-basis: 100%;
       }
     }
   }

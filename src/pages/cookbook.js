@@ -149,7 +149,7 @@ const StyledCookbook = styled.div`
     flex-wrap: wrap;
   }
   .item {
-    flex-basis: 25%;
+    flex-basis: 20%;
   }
   svg {
     color: var(--mainColor);
