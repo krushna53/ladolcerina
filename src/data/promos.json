@@ -5,6 +5,7 @@
     "title": "10 Dessert Recipes",
     "slug": "dessert-recipes",
     "src": "../images/promos/la-rina-dolce-dessert-promo-01.jpg",
+    "gallery": "../images/dessert/",
     "details": ["10 Recipes", "Complete Instruction", "Healthy Options"],
     "content": [
       "Get your free Dessert eBook from our new cookbook Bushels and Feasts, containing 10 irresistible, gluten and grain-free, real food desserts!",

@@ -6,10 +6,19 @@ import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
 import SignupForm from "../components/SignupForm"
 import BackgroundImage from "gatsby-background-image"
+import DessertGallery from "../components/dessertGallery"
 import Gallery from "../components/gallery"
 
 const Promos = ({ data }) => {
-  const { title, content, offer, details, src, testimonial } = data.promoItem
+  const {
+    title,
+    content,
+    gallery,
+    offer,
+    details,
+    src,
+    testimonial,
+  } = data.promoItem
 
   return (
     <Layout>
@@ -35,7 +44,7 @@ const Promos = ({ data }) => {
             </Banner>
           </BackgroundImage>
         </Section>
-        <Section style={{ width: "80vw", margin: "4rem auto" }}>
+        <Section style={{ width: "80vw", margin: "4rem auto 1rem auto" }}>
           <div className="box form-container">
             <div className="summary-container">
               <ul className="contentList">
@@ -60,6 +69,9 @@ const Promos = ({ data }) => {
               })}
             </ul>
           </div>
+        </Section>
+        <DessertGallery />
+        <Section style={{ width: "80vw", margin: "4rem auto" }}>
           <div className="box">
             <h4>Testimonial:</h4>
             <ul className="contentList">
@@ -70,7 +82,6 @@ const Promos = ({ data }) => {
           </div>
         </Section>
       </Wrapper>
-      <Gallery />
     </Layout>
   )
 }
@@ -91,6 +102,7 @@ export const query = graphql`
           }
         }
       }
+      gallery
       testimonial
     }
   }

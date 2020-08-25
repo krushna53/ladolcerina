@@ -143,7 +143,7 @@ const StyledCookbook = styled.div`
     color: var(--mainColor);
   }
   .food-gallery {
-    width: 80vw;
+    width: 100vw;
     margin: 0rem auto;
     display: flex;
     flex-wrap: wrap;
