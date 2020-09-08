@@ -137,12 +137,13 @@ const GalleryWrapper = styled.div`
   margin: 0rem auto;
   .item {
     position: relative;
-    width: 20%;
+    width: 60%;
+    margin: 1rem auto;
   }
   .info {
     text-transform: uppercase;
-    line-height: 1rem;
-    font-size: 0.7rem;
+    line-height: 2.5rem;
+    font-size: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -153,7 +154,7 @@ const GalleryWrapper = styled.div`
   }
   @media (max-width: 768px) {
     .item {
-      width: 50%;
+      width: 90%;
     }
   }
 `

@@ -4,7 +4,7 @@ import styled from "styled-components"
 const SignupForm = () => {
   return (
     <FormWrapper>
-      <h4>Join Our Free List:</h4>
+      <h4>Download FREE eBook</h4>
       <form
         name="contact"
         method="POST"
@@ -46,7 +46,6 @@ const FormWrapper = styled.div`
   margin: 0px auto;
   h4 {
     font-family: "Poppins";
-    font-size: 2rem;
   }
   #hidden {
     display: none;

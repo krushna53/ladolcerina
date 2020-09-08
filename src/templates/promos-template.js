@@ -29,7 +29,7 @@ const Promos = ({ data }) => {
             <Banner title={title}>
               <ul className="details">
                 {details.map((value, id) => {
-                  return <li key={id}>• {value}</li>
+                  return <li key={id}>{value}</li>
                 })}
               </ul>
             </Banner>
@@ -39,12 +39,10 @@ const Promos = ({ data }) => {
           <div className="box form-container">
             <div className="summary-container">
               <ul className="contentList">
-                <h4>Summary:</h4>
                 {content.map((value, id) => {
                   return <li key={id}>{value}</li>
                 })}
               </ul>
-              <p className="cta">Join our mailing list to get these recipes!</p>
             </div>
             <div className="summary-container">
               <div className="form ">
@@ -53,7 +51,6 @@ const Promos = ({ data }) => {
             </div>
           </div>
           <div className="box">
-            <h4>What you get:</h4>
             <ul className="contentList">
               {offer.map((value, id) => {
                 return <li key={id}>{value}</li>
@@ -128,6 +125,11 @@ const Wrapper = styled.div`
       margin: 0.5rem;
       display: inline;
     }
+  }
+  ul > li:nth-child(1) {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
   }
   h4 {
     font-size: 1.5rem;

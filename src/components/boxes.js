@@ -59,8 +59,8 @@ const Boxes = () => {
       </div>
       <div className="item item-4">
         <Img fluid={data.img4.childImageSharp.fluid} />
-        <AniLink fade to="/contact">
-          <p className="info">contact</p>
+        <AniLink fade to="/cookbook">
+          <p className="info">cookbook</p>
         </AniLink>
       </div>
     </GalleryWrapper>

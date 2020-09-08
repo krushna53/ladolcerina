@@ -1,7 +1,7 @@
 [
   {
     "id": "2",
-    "free": "yes",
+    "free": "no",
     "title": "Ultimate Cheese Spread",
     "slug": "cheese-spread",
     "src": "../images/promos/la-rina-dolce-cheese-promo-01.jpg",
@@ -109,7 +109,7 @@
   },
   {
     "id": "5",
-    "free": "yes",
+    "free": "no",
     "title": "The Only Steak Recipe",
     "slug": "steak-recipe",
     "src": "../images/promos/la-rina-dolce-steak-promo-01.jpg",

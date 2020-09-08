@@ -7,7 +7,6 @@ import Img from "gatsby-image"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
-import Gallery from "../components/gallery"
 import Intro from "../components/Intro"
 
 const Cookbook = () => {
@@ -42,8 +41,6 @@ const Cookbook = () => {
               Lifestyle
             </h3>
             <p>By Rina Thoma and Sarah Fragoso</p>
-          </div>
-          <div className="box">
             <p>
               BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu
               trained chef Rina Thoma and international bestselling cookbook
@@ -63,28 +60,32 @@ const Cookbook = () => {
           </div>
           <div className="box">
             <p>
-              Rina and Sarah will inspire their readers to ditch the gluten and
-              grains and focus on transforming fresh, quality, local, and
-              seasonal ingredients into healthy delicious food. The pages of
-              this book are filled with wit, fun, and humor, but also
-              exquisitely beautiful, warm, enchanting, and bursting at the seams
-              with elegant food photography and sweeping Northern California
-              landscapes.
+              <strong>
+                <FaQuoteLeft />{" "}
+                <em>
+                  Rina and Sarah will inspire their readers to ditch the gluten
+                  and grains and focus on transforming fresh, quality, local,
+                  and seasonal ingredients into healthy delicious food. The
+                  pages of this book are filled with wit, fun, and humor, but
+                  also exquisitely beautiful, warm, enchanting, and bursting at
+                  the seams with elegant food photography and sweeping Northern
+                  California landscapes.
+                </em>
+              </strong>
             </p>
             <p>
-              <FaQuoteLeft />{" "}
-              <em>
-                <strong>
+              <strong>
+                <em>
                   BUSHELS AND FEASTS will inspire, delight, and empower readers
                   to entertain in style, as all of their recipes serve 6,
                   creating special meals and memories for family and friends.
                   The recipes in this book will leave readers feeling satisfied,
                   accomplished, and exhilarated with a nourished mind, body and
                   soul.
-                </strong>
-              </em>{" "}
-              <FaQuoteRight />
-              <p style={{ marginTop: "1rem" }}>- Chef Matt Raso</p>
+                </em>{" "}
+                <FaQuoteRight />
+                <p style={{ marginTop: "1rem" }}>- Chef Matt Raso</p>
+              </strong>
             </p>
             <p>
               Mat Raso is the executive chef at Canoe House at Mauna Lani,
@@ -94,11 +95,6 @@ const Cookbook = () => {
               cuisine that celebrates the bounty of local ingredients and those
               who so beautifully craft that food.
             </p>
-          </div>
-          <div className="box food-gallery">
-            <Gallery />
-          </div>
-          <div className="box">
             <p>
               At this time, Bushels and Feasts is only available in eBook form.
               An eBook is a cookbook in an electronic format. Rather than having

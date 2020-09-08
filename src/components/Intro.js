@@ -15,8 +15,8 @@ const Intro = () => {
           </ul>
           <p className="about-info">
             <strong>Hi! I’m Rina.</strong> I’m a wife, mom, cookbook author, and
-            chef. Join me as I explore my Italian roots and relive my most
-            treasured experiences through the dishes I create.
+            chef. Join me as I relive my most treasured experiences through the
+            dishes I create.
           </p>
         </div>
         <div className="contactBox">

@@ -19,11 +19,6 @@ const About = ({ data }) => {
         <Img fluid={data.Img1.childImageSharp.fluid} />
         <Section style={{ width: "80vw", margin: "4rem auto" }}>
           <p>
-            Hi! I’m Rina. I’m a wife, mom, cookbook author, and chef. Join me as
-            I explore my Italian roots and relive my most treasured experiences
-            through the dishes I create.
-          </p>
-          <p>
             10 years ago, I was just a food-obsessed, cookbook-hoarder working
             in corporate sales and living the Army wife dream...following my
             physician husband to the ends of the earth and beyond. In the midst
