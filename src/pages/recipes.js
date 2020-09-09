@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 import RecipeList from "../components/recipes/RecipeList"
-import Gallery from "../components/gallery"
 
 const Recipes = () => {
   return (
@@ -22,7 +21,6 @@ const Recipes = () => {
       >
         <RecipeList />
       </Section>
-      <Gallery />
     </Layout>
   )
 }

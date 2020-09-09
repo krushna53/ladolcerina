@@ -68,8 +68,8 @@ const RecipesWrapper = styled.div`
     left: 20px;
     h4 {
       color: #ffffff;
-      font-size: 4rem;
-      line-height: 3.5rem;
+      font-size: 2rem;
+      line-height: 2.5rem;
       text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
       transition: 0.2s ease-in-out;
       &:hover {

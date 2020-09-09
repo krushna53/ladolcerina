@@ -5,7 +5,6 @@ import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
 import BackgroundImage from "gatsby-background-image"
-import Gallery from "../components/gallery"
 
 const Recipes = ({ data }) => {
   const {
@@ -15,7 +14,14 @@ const Recipes = ({ data }) => {
     dish,
     text1,
     ingredients1,
+    ingredientsList1,
     ingredients2,
+    ingredientsList2,
+    ingredients3,
+    ingredientsList3,
+    ingredients4,
+    ingredientsList4,
+    directions,
   } = data.recipeItem
 
   return (
@@ -58,32 +64,49 @@ const Recipes = ({ data }) => {
               <h4>{dish}</h4>
               <p>{text1}</p>
             </div>
-            {!ingredients1 ? (
-              ""
-            ) : (
-              <div className="ingredients">
-                <ul className="ingredientsList">
-                  {ingredients1.map((value, id) => {
-                    return <li key={id}> {value}</li>
-                  })}
-                </ul>
-              </div>
-            )}
-            {!ingredients2 ? (
-              ""
-            ) : (
-              <div className="ingredients">
-                <ul className="ingredientsList">
-                  {ingredients2.map((value, id) => {
-                    return <li key={id}> {value}</li>
-                  })}
-                </ul>
-              </div>
-            )}
+            <div className="ingredients">
+              <h4>{ingredients1}</h4>
+              <ul className="ingredientsList">
+                {ingredientsList1.map((value, id) => {
+                  return <li key={id}> {value}</li>
+                })}
+              </ul>
+            </div>
+            <div className="ingredients">
+              <h4>{ingredients2}</h4>
+              <ul className="ingredientsList">
+                {ingredientsList2.map((value, id) => {
+                  return <li key={id}> {value}</li>
+                })}
+              </ul>
+            </div>
+            <div className="ingredients">
+              <h4>{ingredients3}</h4>
+              <ul className="ingredientsList">
+                {ingredientsList3.map((value, id) => {
+                  return <li key={id}> {value}</li>
+                })}
+              </ul>
+            </div>
+            <div className="ingredients">
+              <h4>{ingredients4}</h4>
+              <ul className="ingredientsList">
+                {ingredientsList4.map((value, id) => {
+                  return <li key={id}> {value}</li>
+                })}
+              </ul>
+            </div>
+            <div className="ingredients">
+              <h4>Instructions:</h4>
+              <ul className="directionsList">
+                {directions.map((value, id) => {
+                  return <li key={id}> {value}</li>
+                })}
+              </ul>
+            </div>
           </div>
         </Section>
       </Wrapper>
-      <Gallery />
     </Layout>
   )
 }
@@ -102,10 +125,15 @@ export const query = graphql`
       }
       slug
       summary
-      dish
-      text1
       ingredients1
+      ingredientsList1
       ingredients2
+      ingredientsList2
+      ingredients3
+      ingredientsList3
+      ingredients4
+      ingredientsList4
+      directions
     }
   }
 `
@@ -157,6 +185,13 @@ const Wrapper = styled.div`
       margin: 0rem auto;
       li {
         list-style-type: none;
+      }
+    }
+    .directionsList {
+      margin: 0rem auto;
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
       }
     }
   }
