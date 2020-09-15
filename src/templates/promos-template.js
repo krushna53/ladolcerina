@@ -59,7 +59,7 @@ const Promos = ({ data }) => {
           </div>
         </Section>
         <DessertGallery />
-        <Section style={{ width: "80vw", margin: "4rem auto" }}>
+        <Section style={{ width: "80vw", margin: "4rem auto 2rem auto" }}>
           <div className="box">
             <h4>Testimonial:</h4>
             <ul className="contentList">
@@ -67,6 +67,11 @@ const Promos = ({ data }) => {
                 return <li key={id}>{value}</li>
               })}
             </ul>
+          </div>
+        </Section>
+        <Section style={{ margin: "0rem auto 4rem auto" }}>
+          <div className="form ">
+            <SignupForm />
           </div>
         </Section>
       </Wrapper>

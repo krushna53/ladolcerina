@@ -5,6 +5,7 @@ import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
 import BackgroundImage from "gatsby-background-image"
+import { FaPrint, FaBook } from "react-icons/fa"
 
 const Recipes = ({ data }) => {
   const {
@@ -43,6 +44,14 @@ const Recipes = ({ data }) => {
           </BackgroundImage>
         </Section>
         <Section style={{ width: "80vw" }}>
+          <a href="javascript:window.print()">
+            <button>
+              Print <FaPrint />
+            </button>
+          </a>
+          <a href="#">
+            <button>Buy Cookbook</button>
+          </a>
           <div className="box">
             <ul className="contentList">
               <h4>Summary:</h4>
@@ -193,6 +202,17 @@ const Wrapper = styled.div`
         list-style-type: none;
         margin-bottom: 1rem;
       }
+    }
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--mainColor);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    &:hover {
+      cursor: pointer;
     }
   }
   @media (max-width: 768px) {

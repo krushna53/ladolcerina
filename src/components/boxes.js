@@ -51,16 +51,16 @@ const Boxes = () => {
           <p className="info">recipes</p>
         </AniLink>
       </div>
-      <div className="item item-3">
-        <Img fluid={data.img3.childImageSharp.fluid} />
-        <AniLink fade to="/shop">
-          <p className="info">shop</p>
-        </AniLink>
-      </div>
       <div className="item item-4">
         <Img fluid={data.img4.childImageSharp.fluid} />
         <AniLink fade to="/cookbook">
           <p className="info">cookbook</p>
+        </AniLink>
+      </div>
+      <div className="item item-3">
+        <Img fluid={data.img3.childImageSharp.fluid} />
+        <AniLink fade to="/promos/dessert-recipes">
+          <p className="info">dessert ebook</p>
         </AniLink>
       </div>
     </GalleryWrapper>
@@ -82,10 +82,11 @@ const GalleryWrapper = styled.div`
       font-family: "Poppins";
       font-weight: bold;
       font-size: 4rem;
+      line-height: 3.5rem;
       position: absolute;
       text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
       letter-spacing: 2px;
-      top: 80%;
+      top: 50%;
       padding: 0.5rem 1.5rem;
       color: var(--white);
       transition: 200ms ease-in;

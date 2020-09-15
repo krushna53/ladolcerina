@@ -4,7 +4,7 @@ import styled from "styled-components"
 const Copyright = () => {
   return (
     <CopyrightWrapper className="copyright">
-      &copy; Copyright 2020 | La Dolce Rina | Bushels & Feasts
+      &copy; Copyright 2020 | La Dolce Rina
     </CopyrightWrapper>
   )
 }

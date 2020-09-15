@@ -26,6 +26,15 @@ class Footer extends Component {
     return (
       <FooterWrapper>
         <div className="box contact">
+          <h6>
+            <a href="/">BUSHELS AND FEASTS</a>
+          </h6>
+          <p>
+            MORE THAN 150 FARM-TO-TABLE RECIPES FOR A GLUTEN AND GRAIN-FREE
+            LIFESTYLE
+            <br />
+            By Rina Thoma and Sarah Fragoso
+          </p>
           {this.state.icons.map(item => (
             <a
               href={item.path}
@@ -55,13 +64,22 @@ const FooterWrapper = styled.div`
   }
   .box {
     flex-basis: 100%;
-    padding: 2rem;
+    padding: 4rem;
     text-align: center;
+  }
+  .contact {
+    h6 {
+      color: #ffffff;
+      font-size: 2rem;
+    }
+    p {
+      color: #ffffff;
+    }
   }
   a {
     color: var(--white);
     font-size: 2rem;
-    line-height: 8rem;
+    line-height: 4rem;
     margin-right: 5px;
   }
   @media (max-width: 768px) {

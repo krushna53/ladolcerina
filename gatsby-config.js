@@ -54,6 +54,10 @@ module.exports = {
             family: `Open Sans`,
             variants: [`400`, `700`],
           },
+          {
+            family: `Caveat`,
+            variants: [`700`],
+          },
         ],
       },
     },

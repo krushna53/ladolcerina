@@ -30,10 +30,10 @@ const BackgroundSection = ({ className, children }) => (
           </BackgroundImage>
           <p
             style={{
-              fontSize: "12px",
+              fontSize: "20px",
               margin: "0 auto",
               color: "black",
-              fontStyle: "italic",
+              fontFamily: "Caveat",
               textAlign: "center",
             }}
           >
@@ -50,7 +50,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   height: 100px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 200px;
+  background-size: 300px;
 `
 
 export default StyledBackgroundSection
