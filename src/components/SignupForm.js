@@ -1,10 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
-const SignupForm = () => {
+const SignupForm = ({ title }) => {
   return (
     <FormWrapper>
-      <h4>Download FREE eBook</h4>
+      <h4>{title}</h4>
       <form
         name="contact"
         method="POST"
@@ -46,6 +46,7 @@ const FormWrapper = styled.div`
   margin: 0px auto;
   h4 {
     font-family: "Poppins";
+    margin-bottom: 1rem;
   }
   #hidden {
     display: none;

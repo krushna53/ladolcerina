@@ -33,7 +33,7 @@ class Footer extends Component {
             MORE THAN 150 FARM-TO-TABLE RECIPES FOR A GLUTEN AND GRAIN-FREE
             LIFESTYLE
             <br />
-            By Rina Thoma and Sarah Fragoso
+            By Rina Thoma with Sarah Fragoso
           </p>
           {this.state.icons.map(item => (
             <a

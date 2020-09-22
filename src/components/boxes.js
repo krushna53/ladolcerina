@@ -60,7 +60,7 @@ const Boxes = () => {
       <div className="item item-3">
         <Img fluid={data.img3.childImageSharp.fluid} />
         <AniLink fade to="/promos/dessert-recipes">
-          <p className="info">dessert ebook</p>
+          <p className="info">free dessert ebook</p>
         </AniLink>
       </div>
     </GalleryWrapper>

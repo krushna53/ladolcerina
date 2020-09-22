@@ -8,6 +8,7 @@ import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 import Intro from "../components/Intro"
+import CookbookGallery from "../components/CookbookGallery"
 
 const Cookbook = () => {
   const data = useStaticQuery(graphql`
@@ -44,10 +45,9 @@ const Cookbook = () => {
           <div className="box box-title">
             <h1>Bushels and Feasts</h1>
             <h3>
-              More than 150 Farm-to-Table Recipes for a Gluten and Grain-Free
-              Lifestyle
+              170 FARM-TO-TABLE RECIPES FOR A GLUTEN AND GRAIN-FREE LIFESTYLE
             </h3>
-            <p>By Rina Thoma and Sarah Fragoso</p>
+            <p>By Rina Thoma with Sarah Fragoso</p>
             <p>
               BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu
               trained chef Rina Thoma and international bestselling cookbook
@@ -406,6 +406,9 @@ const Cookbook = () => {
           <div className="box">
             <Intro />
           </div>
+        </Section>
+        <Section style={{ width: "100vw", margin: "0rem auto" }}>
+          <CookbookGallery />
         </Section>
       </StyledCookbook>
     </Layout>

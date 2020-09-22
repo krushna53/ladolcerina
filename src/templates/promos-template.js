@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Section from "../components/globals/section/Section"
 import styled from "styled-components"
@@ -38,6 +39,7 @@ const Promos = ({ data }) => {
         <Section style={{ width: "80vw", margin: "4rem auto 1rem auto" }}>
           <div className="box form-container">
             <div className="summary-container">
+              <Img fluid={data.rina.childImageSharp.fluid} />
               <ul className="contentList">
                 {content.map((value, id) => {
                   return <li key={id}>{value}</li>
@@ -46,7 +48,7 @@ const Promos = ({ data }) => {
             </div>
             <div className="summary-container">
               <div className="form ">
-                <SignupForm />
+                <SignupForm title="GET FREE DESSERT EBOOK" />
               </div>
             </div>
           </div>
@@ -60,18 +62,20 @@ const Promos = ({ data }) => {
         </Section>
         <DessertGallery />
         <Section style={{ width: "80vw", margin: "4rem auto 2rem auto" }}>
-          <div className="box">
-            <h4>Testimonial:</h4>
-            <ul className="contentList">
-              {testimonial.map((value, id) => {
-                return <li key={id}>{value}</li>
-              })}
-            </ul>
+          <div className="testimonial">
+            <div className="testimonial-copy">
+              <h4>Testimonial:</h4>
+              <ul className="contentList">
+                {testimonial.map((value, id) => {
+                  return <li key={id}>{value}</li>
+                })}
+              </ul>
+            </div>
           </div>
         </Section>
         <Section style={{ margin: "0rem auto 4rem auto" }}>
           <div className="form ">
-            <SignupForm />
+            <SignupForm title="GET FREE DESSERT EBOOK" />
           </div>
         </Section>
       </Wrapper>
@@ -96,6 +100,20 @@ export const query = graphql`
         }
       }
       testimonial
+    }
+    rina: file(relativePath: { eq: "rina-cookbook-img.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 500, quality: 90) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    matt: file(relativePath: { eq: "matt.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 200, quality: 90) {
+          ...GatsbyImageSharpFluid
+        }
+      }
     }
   }
 `
@@ -169,6 +187,7 @@ const Wrapper = styled.div`
       }
     }
   }
+
   @media (max-width: 768px) {
     .details {
       width: 90%;

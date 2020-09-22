@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Section from "../components/globals/section/Section"
-import ContactForm from "../components/ContactForm"
+import SignUpForm from "../components/SignupForm"
 
 const Intro = () => {
   return (
@@ -20,7 +20,9 @@ const Intro = () => {
           </p>
         </div>
         <div className="contactBox">
-          <ContactForm />
+          <div className="signup-container">
+            <SignUpForm title="Never Miss a Recipe!" />
+          </div>
         </div>
       </Section>
     </IntroWrapper>
@@ -39,6 +41,10 @@ const IntroWrapper = styled.div`
       height: 100px;
     }
   }
+  .signup-container {
+    background: #f1f1f1;
+    padding: 2rem;
+  }
   .introBox {
     ul {
       list-style-type: none;
@@ -56,6 +62,9 @@ const IntroWrapper = styled.div`
     margin-top: 1rem;
   }
   @media (max-width: 768px) {
+    .signup-container {
+      margin-top: 2rem;
+    }
     .introBox,
     .contactBox {
       flex-basis: 100%;
