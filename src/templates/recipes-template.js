@@ -5,7 +5,7 @@ import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
 import BackgroundImage from "gatsby-background-image"
-import { FaPrint, FaBook } from "react-icons/fa"
+import { FaPrint } from "react-icons/fa"
 
 const Recipes = ({ data }) => {
   const {
@@ -36,7 +36,7 @@ const Recipes = ({ data }) => {
           }}
         >
           <BackgroundImage
-            className="hero"
+            className="hero no-print"
             Tag="section"
             fluid={src.childImageSharp.fluid}
           >
@@ -44,17 +44,15 @@ const Recipes = ({ data }) => {
           </BackgroundImage>
         </Section>
         <Section style={{ width: "80vw" }}>
-          <a href="javascript:window.print()">
-            <button>
-              Print <FaPrint />
-            </button>
-          </a>
+          <button className="no-print" onClick={() => window.print()}>
+            Print <FaPrint />
+          </button>
           <a href="#">
-            <button>Buy Cookbook</button>
+            <button className="no-print">Buy Cookbook</button>
           </a>
           <div className="box">
             <ul className="contentList">
-              <h4>Summary:</h4>
+              <h4>{title}</h4>
               {summary.map((value, id) => {
                 return <li key={id}>{value}</li>
               })}
@@ -148,6 +146,18 @@ export const query = graphql`
 `
 
 const Wrapper = styled.div`
+  /* Printing */
+  @media print {
+    .no-print {
+      display: none;
+    }
+    .printable,
+    .printable * {
+      display: block;
+    }
+  }
+  /* Component CSS */
+
   color: var(--darkGray);
   .box {
     flex-basis: 100%;
