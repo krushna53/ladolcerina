@@ -1,26 +1,12 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 import Gallery from "../components/gallery"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 
 const Favorites = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      Img1: file(relativePath: { eq: "shop/img-01.jpg" }) {
-        childImageSharp {
-          fluid(quality: 80, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
       <StyledFavorites>

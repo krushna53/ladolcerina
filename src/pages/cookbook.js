@@ -403,12 +403,14 @@ const Cookbook = () => {
               <button>Buy Cookbook</button>
             </a>
           </div>
+        </Section>
+        <Section style={{ width: "100vw", margin: "4rem auto" }}>
+          <CookbookGallery />
+        </Section>
+        <Section>
           <div className="box">
             <Intro />
           </div>
-        </Section>
-        <Section style={{ width: "100vw", margin: "0rem auto" }}>
-          <CookbookGallery />
         </Section>
       </StyledCookbook>
     </Layout>
