@@ -75,7 +75,7 @@ const Promos = ({ data }) => {
         </Section>
         <Section style={{ margin: "0rem auto 4rem auto" }}>
           <div className="form ">
-            <SignupForm title="GET FREE DESSERT EBOOK" />
+            <SignupForm />
           </div>
         </Section>
       </Wrapper>

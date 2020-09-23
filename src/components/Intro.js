@@ -21,7 +21,7 @@ const Intro = () => {
         </div>
         <div className="contactBox">
           <div className="signup-container">
-            <SignUpForm title="Never Miss a Recipe!" />
+            <SignUpForm />
           </div>
         </div>
       </Section>
@@ -37,6 +37,7 @@ const IntroWrapper = styled.div`
     flex-basis: 40%;
   }
   .contactBox {
+    flex-basis: 50%;
     #message {
       height: 100px;
     }
@@ -49,7 +50,7 @@ const IntroWrapper = styled.div`
     ul {
       list-style-type: none;
       margin: 0rem;
-      font-size: 7.5rem;
+      font-size: 6rem;
       font-family: Poppins;
       font-weight: bold;
       color: var(--mainColor);

@@ -1,10 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 
-const SignupForm = ({ title }) => {
+const SignupForm = () => {
   return (
     <FormWrapper>
-      <h4>{title}</h4>
+      <div className="form-title">
+        <h4>Subscribe and never miss a recipe</h4>
+        <p>Comes with a FREE dessert EBook</p>
+      </div>
       <form
         name="contact"
         method="POST"
@@ -44,9 +47,20 @@ const SignupForm = ({ title }) => {
 const FormWrapper = styled.div`
   width: 100%;
   margin: 0px auto;
-  h4 {
-    font-family: "Poppins";
+  .form-title {
     margin-bottom: 1rem;
+    h4 {
+      color: var(--mainColor);
+      font-family: "Poppins";
+      font-size: 1.5rem;
+      margin-bottom: 0rem;
+      line-height: 1.5rem;
+    }
+    p {
+      font-weight: bold;
+      font-size: 1rem;
+      color: var(--gray);
+    }
   }
   #hidden {
     display: none;
