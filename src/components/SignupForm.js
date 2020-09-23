@@ -1,41 +1,77 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 const SignupForm = () => {
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
+  const [message, setMessage] = useState("Subscribe and never miss a recipe")
+
+  const emailHandler = e => {
+    setEmail(e.target.value)
+  }
+
+  const nameHandler = e => {
+    setName(e.target.value)
+  }
+
+  const handleSubmit = e => {
+    e.preventDefault()
+    setMessage("Thank you for Subscribing!")
+    addToMailchimp(email, {
+      FNAME: name,
+    })
+      .then(data => {
+        // I recommend setting data to React state
+        // but you can do whatever you want (including ignoring this `then()` altogether)
+        console.log(data)
+      })
+      .catch(() => {
+        // unnecessary because Mailchimp only ever
+        // returns a 200 status code
+        // see below for how to handle errors
+      })
+    setName("")
+    setEmail("")
+  }
+
   return (
     <FormWrapper>
       <div className="form-title">
-        <h4>Subscribe and never miss a recipe</h4>
+        <h4>{message}</h4>
         <p>Comes with a FREE dessert EBook</p>
       </div>
-      <form
-        name="contact"
-        method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <ul class="form-list">
-          <li id="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </li>
-          <li class="form-list__row">
+      <form onSubmit={handleSubmit}>
+        <ul className="form-list">
+          <li className="form-list__row">
             <label htmlFor="name">
-              Name:
-              <input id="name" type="text" name="name" required="true" />
+              First Name:
+              <input
+                id="name"
+                type="text"
+                name="name"
+                required="true"
+                value={name}
+                onChange={nameHandler}
+              />
             </label>
           </li>
-          <li class="form-list__row">
+          <li className="form-list__row">
             <label htmlFor="email">
               Email:
-              <input id="email" type="text" name="email" required="true" />
+              <input
+                id="email"
+                type="text"
+                name="email"
+                required="true"
+                value={email}
+                onChange={emailHandler}
+              />
             </label>
           </li>
           <li>
-            <button type="submit" class="button">
-              Get Recipes
+            <button type="submit" className="button">
+              YES!
             </button>
           </li>
         </ul>
@@ -80,6 +116,7 @@ const FormWrapper = styled.div`
     color: var(--white);
     background-color: var(--mainColor);
     padding: 12px 25px;
+    margin-top: 1rem;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -163,7 +200,7 @@ const FormWrapper = styled.div`
     list-style: none;
   }
   .form-list__row {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
   .form-list__row label {
     position: relative;
