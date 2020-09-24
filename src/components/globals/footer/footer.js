@@ -30,8 +30,7 @@ class Footer extends Component {
             <a href="/">BUSHELS AND FEASTS</a>
           </h6>
           <p>
-            MORE THAN 150 FARM-TO-TABLE RECIPES FOR A GLUTEN AND GRAIN-FREE
-            LIFESTYLE
+            170 Farm to Table Recipes for a Gluten and Grain Free Lifestyle
             <br />
             By Rina Thoma with Sarah Fragoso
           </p>
