@@ -37,7 +37,7 @@ const BackgroundSection = ({ className, children }) => (
               textAlign: "center",
             }}
           >
-            Mostly healthy recipes inspired by my sweet and savory life.
+            Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life
           </p>
         </>
       )

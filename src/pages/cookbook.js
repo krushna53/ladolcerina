@@ -45,7 +45,7 @@ const Cookbook = () => {
           <div className="box box-title">
             <h1>Bushels and Feasts</h1>
             <h3>
-              170 FARM-TO-TABLE RECIPES FOR A GLUTEN AND GRAIN-FREE LIFESTYLE
+              170 FARM TO TABLE RECIPES FOR A GLUTEN AND GRAIN FREE LIFESTYLE
             </h3>
             <p>By Rina Thoma with Sarah Fragoso</p>
             <p>
@@ -75,51 +75,56 @@ const Cookbook = () => {
                   <strong>
                     <FaQuoteLeft />{" "}
                     <em>
-                      Rina and Sarah will inspire their readers to ditch the
-                      gluten and grains and focus on transforming fresh,
-                      quality, local, and seasonal ingredients into healthy
-                      delicious food. The pages of this book are filled with
-                      wit, fun, and humor, but also exquisitely beautiful, warm,
-                      enchanting, and bursting at the seams with elegant food
-                      photography and sweeping Northern California landscapes.
+                      BUSHELS AND FEASTS is a collaboration between Le Cordon
+                      Bleu trained chef Rina Thoma and international bestselling
+                      cookbook author Sarah Fragoso. The result is a celebration
+                      of real food inspired by California and French cuisine;
+                      beautiful, delicious, market-fresh, family meals free from
+                      gluten and grains and filled with healthy fats and
+                      decadent desserts.
                     </em>
                   </strong>
                 </p>
                 <p>
                   <strong>
                     <em>
-                      BUSHELS AND FEASTS will inspire, delight, and empower
-                      readers to entertain in style, as all of their recipes
-                      serve 6, creating special meals and memories for family
-                      and friends. The recipes in this book will leave readers
+                      Rina and Sarah will inspire their readers to focus on
+                      transforming bushels of fresh, quality, local, and
+                      seasonal ingredients into healthy, delicious, everyday
+                      feasts. The pages of this book are filled with wit, fun,
+                      and humor, but also exquisitely beautiful, warm,
+                      enchanting, and bursting at the seams with elegant food
+                      photography and sweeping Northern California landscapes.
+                    </em>{" "}
+                  </strong>
+                </p>
+                <p>
+                  <strong>
+                    <em>
+                      BUSHELS AND FEASTS will inspire, delight, and encourage
+                      readers to share good food and wine with the people they
+                      love, creating special meals and memories for family and
+                      friends. The recipes in this book will leave readers
                       feeling satisfied, accomplished, and exhilarated with a
                       nourished mind, body and soul.
                     </em>{" "}
                     <FaQuoteRight />
-                    <p style={{ marginTop: "1rem" }}>- Chef Matt Raso</p>
+                  </strong>
+                </p>
+                <p>
+                  <strong>
+                    <em>- Matt Raso, Famed Nobu executive chef</em>{" "}
                   </strong>
                 </p>
               </div>
             </div>
-            <p>
-              Mat Raso is the executive chef at Canoe House at Mauna Lani,
-              Auberge Resorts Collection, on the Big Island of Hawaii, and
-              former executive chef at famed Nobu restaurant locations including
+            <p style={{ marginTop: "2rem" }}>
+              Matt Raso is currently the executive chef at Canoe House at Mauna
+              Lani, Auberge Resorts Collection, on the Big Island of Hawaii, and
+              former executive chef at Nobu restaurant locations including
               Dallas, Waikiki, Honolulu, and Miami. Matt is passionate about
               cuisine that celebrates the bounty of local ingredients and those
               who so beautifully craft that food.
-            </p>
-            <p>
-              At this time, Bushels and Feasts is only available in eBook form.
-              An eBook is a cookbook in an electronic format. Rather than having
-              to go to the store to purchase a cookbook, you can download it to
-              your computer, smartphone, or tablet for easy access whenever you
-              are ready to cook!
-            </p>
-            <p>
-              After you purchase your eCookbook, you will receive an email with
-              a pdf file that you can download to your devices and save for
-              future use.
             </p>
             <a className="cookbook-button" href="/">
               <button>Buy Cookbook</button>
@@ -427,7 +432,7 @@ const StyledCookbook = styled.div`
   }
   .bio-gallery {
     width: 100vw;
-    margin: 0rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
   }
