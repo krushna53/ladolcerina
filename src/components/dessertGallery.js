@@ -104,7 +104,7 @@ const DessertGallery = () => {
       </div>
       <div className="item item-6">
         <Img fluid={data.img6.childImageSharp.fluid} />
-        <p className="info">Cinnamon Apple Crumble</p>
+        <p className="info">Cherry Clafouti with Maple Whipped Cream</p>
       </div>
       <div className="item item-7">
         <Img fluid={data.img7.childImageSharp.fluid} />
