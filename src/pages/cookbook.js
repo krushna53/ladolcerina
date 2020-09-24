@@ -51,9 +51,10 @@ const Cookbook = () => {
             <p>
               BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu
               trained chef Rina Thoma and international bestselling cookbook
-              author Sarah Fragoso. The result is a celebration of real food;
-              beautiful, delicious, market-fresh, family meals free from gluten
-              and grains and filled with healthy fats and decadent desserts.{" "}
+              author Sarah Fragoso. The result is a celebration of real food
+              inspired by California and French cuisine; beautiful, delicious,
+              market-fresh, family meals free from gluten and grains and filled
+              with healthy fats and decadent desserts.{" "}
             </p>
           </div>
           <div className=" bio-gallery">
@@ -129,6 +130,14 @@ const Cookbook = () => {
             <a className="cookbook-button" href="/">
               <button>Buy Cookbook</button>
             </a>
+            <ul style={{ margin: "1rem 0rem 0rem 2rem" }}>
+              <li>Gluten Free</li>
+              <li>Grain Free</li>
+              <li>Refined Sugar Free</li>
+              <li>Paleo-friendly</li>
+              <li>Keto-friendly</li>
+              <li>Low Carb</li>
+            </ul>
           </div>
           <div className="book-content box">
             <h3>Chapter 1: Hors d’ Oeuvres</h3>
@@ -407,6 +416,14 @@ const Cookbook = () => {
             <a className="cookbook-button" href="/">
               <button>Buy Cookbook</button>
             </a>
+            <ul style={{ marginTop: "1rem" }}>
+              <li>Gluten Free</li>
+              <li>Grain Free</li>
+              <li>Refined Sugar Free</li>
+              <li>Paleo-friendly</li>
+              <li>Keto-friendly</li>
+              <li>Low Carb</li>
+            </ul>
           </div>
         </Section>
         <Section style={{ width: "100vw", margin: "4rem auto" }}>
@@ -481,6 +498,7 @@ const StyledCookbook = styled.div`
   }
   .matt {
     width: 200px;
+    margin-right: 10px;
   }
   .book-content {
     h3 {

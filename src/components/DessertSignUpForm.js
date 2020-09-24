@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import addToMailchimp from "gatsby-plugin-mailchimp"
 
-const SignupForm = () => {
+const DessertSignupForm = () => {
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
-  const [message, setMessage] = useState("never miss a recipe")
+  const [message, setMessage] = useState("DOWNLOAD YOUR FREE EBOOK")
 
   const emailHandler = e => {
     setEmail(e.target.value)
@@ -252,4 +252,4 @@ const FormWrapper = styled.div`
   }
 `
 
-export default SignupForm
+export default DessertSignupForm

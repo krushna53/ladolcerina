@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Section from "../components/globals/section/Section"
 import styled from "styled-components"
 import Banner from "../components/globals/header/Banner"
-import SignupForm from "../components/SignupForm"
+import DessertSignUpForm from "../components/DessertSignUpForm"
 import BackgroundImage from "gatsby-background-image"
 import DessertGallery from "../components/dessertGallery"
 
@@ -48,7 +48,7 @@ const Promos = ({ data }) => {
             </div>
             <div className="summary-container">
               <div className="form ">
-                <SignupForm title="GET FREE DESSERT EBOOK" />
+                <DessertSignUpForm />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ const Promos = ({ data }) => {
         </Section>
         <Section style={{ margin: "0rem auto 4rem auto" }}>
           <div className="form ">
-            <SignupForm />
+            <DessertSignUpForm />
           </div>
         </Section>
       </Wrapper>
