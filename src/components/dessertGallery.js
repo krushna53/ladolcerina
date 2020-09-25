@@ -82,11 +82,11 @@ const DessertGallery = () => {
     <GalleryWrapper>
       <div className="item item-1">
         <Img fluid={data.img1.childImageSharp.fluid} />
-        <p className="info">Sumer Fruit Papillotes</p>
+        <p className="info">Summer Fruit Papillotes</p>
       </div>
       <div className="item item-2">
         <Img fluid={data.img2.childImageSharp.fluid} />
-        <p className="info">Salted Caramel Dark Chocolate Mouse</p>
+        <p className="info">Salted Caramel Dark Chocolate Mousse</p>
       </div>
       <div className="item item-3">
         <Img fluid={data.img3.childImageSharp.fluid} />
@@ -118,7 +118,7 @@ const DessertGallery = () => {
       </div>
       <div className="item item-9">
         <Img fluid={data.img9.childImageSharp.fluid} />
-        <p className="info">Brown Butter Pistachio and Lemon Financiars</p>
+        <p className="info">Brown Butter Pistachio and Lemon Financiers</p>
       </div>
       <div className="item item-10">
         <Img fluid={data.img10.childImageSharp.fluid} />

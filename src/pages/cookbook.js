@@ -74,20 +74,6 @@ const Cookbook = () => {
               <div className="matt-copy">
                 <p>
                   <strong>
-                    <FaQuoteLeft />{" "}
-                    <em>
-                      BUSHELS AND FEASTS is a collaboration between Le Cordon
-                      Bleu trained chef Rina Thoma and international bestselling
-                      cookbook author Sarah Fragoso. The result is a celebration
-                      of real food inspired by California and French cuisine;
-                      beautiful, delicious, market-fresh, family meals free from
-                      gluten and grains and filled with healthy fats and
-                      decadent desserts.
-                    </em>
-                  </strong>
-                </p>
-                <p>
-                  <strong>
                     <em>
                       Rina and Sarah will inspire their readers to focus on
                       transforming bushels of fresh, quality, local, and
@@ -477,6 +463,7 @@ const StyledCookbook = styled.div`
       border: none;
       border-radius: 5px;
       padding: 1rem 2rem;
+      margin: 2rem 0rem;
       font-size: 1.5rem;
       color: #ffffff;
       &:hover {
