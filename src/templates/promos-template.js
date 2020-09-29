@@ -8,6 +8,7 @@ import Banner from "../components/globals/header/Banner"
 import DessertSignUpForm from "../components/DessertSignUpForm"
 import BackgroundImage from "gatsby-background-image"
 import DessertGallery from "../components/dessertGallery"
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const Promos = ({ data }) => {
   const { title, content, offer, details, src, testimonial } = data.promoItem
@@ -40,9 +41,20 @@ const Promos = ({ data }) => {
           <div className="box form-container">
             <div className="summary-container">
               <Img fluid={data.rina.childImageSharp.fluid} />
+              <p
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "1.2rem",
+                  margin: "2rem 0rem",
+                }}
+              >
+                Get your free Dessert eBook from my new cookbook Bushels and
+                Feasts, containing 10 irresistible, gluten and grain-free, real
+                food desserts!
+              </p>
               <ul className="contentList">
                 {content.map((value, id) => {
-                  return <li key={id}>{value}</li>
+                  return <li key={id}>&#x2714; {value}</li>
                 })}
               </ul>
             </div>
@@ -61,15 +73,43 @@ const Promos = ({ data }) => {
           </div>
         </Section>
         <DessertGallery />
-        <Section style={{ width: "80vw", margin: "4rem auto 2rem auto" }}>
-          <div className="testimonial">
+        <Section style={{ width: "80vw", margin: "2rem auto 2rem auto" }}>
+          <div className="content-intro">
+            <h1 style={{ color: "var(--mainColor)" }}>BUSHELS AND FEASTS</h1>
+            <h3>
+              170 FARM TO TABLE RECIPES FOR A GLUTEN AND GRAIN FREE LIFESTYLE
+            </h3>
+            <p>By Rina Thoma with Sarah Fragoso</p>
+          </div>
+          <div className="testimonial-container">
+            <div className="testimonial-image">
+              <Img fluid={data.matt.childImageSharp.fluid} className="matt" />
+            </div>
             <div className="testimonial-copy">
-              <h4>Testimonial:</h4>
-              <ul className="contentList">
-                {testimonial.map((value, id) => {
-                  return <li key={id}>{value}</li>
-                })}
-              </ul>
+              <p
+                style={{
+                  marginTop: "1rem",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                }}
+              >
+                <FaQuoteLeft /> BUSHELS AND FEASTS is a collaboration between Le
+                Cordon Bleu trained chef Rina Thoma and international
+                bestselling cookbook author Sarah Fragoso. The result is a
+                celebration of real food inspired by California and French
+                cuisine; beautiful, delicious, market-fresh, family meals free
+                from gluten and grains and filled with healthy fats and decadent
+                desserts. <FaQuoteRight />
+              </p>
+              <p
+                style={{
+                  marginTop: "1rem",
+                  fontWeight: "bold",
+                  fontStyle: "italic",
+                }}
+              >
+                <strong>Matt Raso, Famed Nobu executive chef</strong>
+              </p>
             </div>
           </div>
         </Section>
@@ -143,16 +183,15 @@ const Wrapper = styled.div`
     width: 60%;
     margin: 0rem auto;
     padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+    font-weight: bold;
     border-radius: 2px;
     li {
       margin: 0.5rem;
       display: inline;
     }
   }
-  ul > li:nth-child(1) {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  h3 {
+    color: var(--mainColor);
   }
   h4 {
     font-size: 1.5rem;
@@ -186,6 +225,22 @@ const Wrapper = styled.div`
         list-style-type: none;
       }
     }
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem 0rem;
+    .testimonial-image {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .testimonial-copy {
+      flex: 3;
+    }
+  }
+  svg {
+    color: var(--mainColor);
   }
 
   @media (max-width: 768px) {

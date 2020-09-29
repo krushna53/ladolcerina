@@ -74,6 +74,7 @@ const Cookbook = () => {
               <div className="matt-copy">
                 <p>
                   <strong>
+                    <FaQuoteLeft />{" "}
                     <em>
                       Rina and Sarah will inspire their readers to focus on
                       transforming bushels of fresh, quality, local, and
@@ -100,7 +101,7 @@ const Cookbook = () => {
                 </p>
                 <p>
                   <strong>
-                    <em>- Matt Raso, Famed Nobu executive chef</em>{" "}
+                    <em>Matt Raso, Famed Nobu executive chef</em>{" "}
                   </strong>
                 </p>
               </div>
@@ -116,13 +117,15 @@ const Cookbook = () => {
             <a className="cookbook-button" href="/">
               <button>Buy Cookbook</button>
             </a>
-            <ul style={{ margin: "1rem 0rem 0rem 2rem" }}>
-              <li>Gluten Free</li>
-              <li>Grain Free</li>
-              <li>Refined Sugar Free</li>
-              <li>Paleo-friendly</li>
-              <li>Keto-friendly</li>
-              <li>Low Carb</li>
+            <ul
+              style={{ margin: "1rem 0rem 0rem 0rem", listStyleType: "none" }}
+            >
+              <li>&#x2714; Gluten Free</li>
+              <li>&#x2714; Grain Free</li>
+              <li>&#x2714; Refined Sugar Free</li>
+              <li>&#x2714; Paleo-friendly</li>
+              <li>&#x2714; Keto-friendly</li>
+              <li>&#x2714; Low Carb</li>
             </ul>
           </div>
           <div className="book-content box">
@@ -398,27 +401,23 @@ const Cookbook = () => {
               <li>Simple Homemade Tomato Sauce</li>
               <li>Tarragon Mayonnaise</li>
             </ul>
+            <h3>Chapter 10: Bonus Content</h3>
+            <ul>
+              <li>How to Cook the Perfect Steak</li>
+              <li>Creating the Ultimate Cheese Spread with Wine Pairings</li>
+              <li>
+                Guide to Cooking Meat and Creating Sauces in 10 Easy Steps
+              </li>
+              <li>Tasting Guide</li>
+            </ul>
             <br />
             <a className="cookbook-button" href="/">
               <button>Buy Cookbook</button>
             </a>
-            <ul style={{ marginTop: "1rem" }}>
-              <li>Gluten Free</li>
-              <li>Grain Free</li>
-              <li>Refined Sugar Free</li>
-              <li>Paleo-friendly</li>
-              <li>Keto-friendly</li>
-              <li>Low Carb</li>
-            </ul>
           </div>
         </Section>
-        <Section style={{ width: "100vw", margin: "4rem auto" }}>
+        <Section style={{ width: "100vw", margin: "4rem auto 0rem auto" }}>
           <CookbookGallery />
-        </Section>
-        <Section>
-          <div className="box">
-            <Intro />
-          </div>
         </Section>
       </StyledCookbook>
     </Layout>

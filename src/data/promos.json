@@ -2,21 +2,20 @@
   {
     "id": "1",
     "free": "no",
-    "title": "10 Dessert Recipes",
+    "title": "FREE DESSERT EBOOK",
     "slug": "dessert-recipes",
     "src": "../images/promos/la-rina-dolce-dessert-promo-01.jpg",
     "gallery": "../images/dessert/",
     "details": [
-      "Delicious, honest, real food desserts that celebrate each and every ingredient."
+      "Delicious, honest, real food desserts that celebrate each and every ingredient!"
     ],
     "content": [
-      "Get your free Dessert eBook from my new cookbook Bushels and Feasts, containing 10 irresistible, gluten and grain-free, real food desserts!",
-      "• Gluten Free",
-      "• Grain Free",
-      "• Refined Sugar Free",
-      "• Paleo-friendly",
-      "• Keto-friendly",
-      "• Low Carb"
+      "Gluten Free",
+      "Grain Free",
+      "Refined Sugar Free",
+      "Paleo-friendly",
+      "Keto-friendly",
+      "Low Carb"
     ],
     "offer": ["10 Bushels and Feasts Dessert Recipes"],
     "testimonial": [
