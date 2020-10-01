@@ -7,7 +7,6 @@ import Img from "gatsby-image"
 import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
-import Intro from "../components/Intro"
 import CookbookGallery from "../components/CookbookGallery"
 
 const Cookbook = () => {

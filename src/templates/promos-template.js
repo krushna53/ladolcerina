@@ -11,7 +11,7 @@ import DessertGallery from "../components/dessertGallery"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 
 const Promos = ({ data }) => {
-  const { title, content, offer, details, src, testimonial } = data.promoItem
+  const { title, content, details, src } = data.promoItem
 
   return (
     <Layout>
@@ -65,11 +65,9 @@ const Promos = ({ data }) => {
             </div>
           </div>
           <div className="box">
-            <ul className="contentList">
-              {offer.map((value, id) => {
-                return <li key={id}>{value}</li>
-              })}
-            </ul>
+            <h3 style={{ color: "black" }}>
+              10 Bushels and Feasts Dessert Recipes
+            </h3>
           </div>
         </Section>
         <DessertGallery />

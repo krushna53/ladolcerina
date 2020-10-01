@@ -47,7 +47,7 @@ const Recipes = ({ data }) => {
           <button className="no-print" onClick={() => window.print()}>
             Print <FaPrint />
           </button>
-          <a href="#">
+          <a href="/">
             <button className="no-print">Buy Cookbook</button>
           </a>
           <div className="box">
