@@ -33,11 +33,6 @@ class NavBarLinks extends Component {
       },
       {
         id: 4,
-        path: "/favorites",
-        text: "favorites",
-      },
-      {
-        id: 5,
         path: "/contact",
         text: "contact",
       },
