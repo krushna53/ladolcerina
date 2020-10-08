@@ -103,7 +103,7 @@ const AboutWrapper = styled.div`
   }
   .rina-image {
     width: 400px;
-    margin-bottom: 1rem;
+    margin: 2rem auto;
   }
 `
 
