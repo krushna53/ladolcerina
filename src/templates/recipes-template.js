@@ -44,11 +44,11 @@ const Recipes = ({ data }) => {
           </BackgroundImage>
         </Section>
         <Section style={{ width: "80vw" }}>
-          <button className="no-print" onClick={() => window.print()}>
+          <button>
             Print <FaPrint />
           </button>
-          <a href="/">
-            <button className="no-print">Buy Cookbook</button>
+          <a href="https://www.bushelsandfeasts.com">
+            <button className="no-print">Buy eCookbook</button>
           </a>
           <div className="box">
             <ul className="contentList">

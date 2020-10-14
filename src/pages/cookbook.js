@@ -125,9 +125,27 @@ const Cookbook = () => {
               cuisine that celebrates the bounty of local ingredients and those
               who so beautifully craft that food.
             </p>
-            <a className="cookbook-button" href="/">
-              <button>Buy Cookbook</button>
+            <a
+              className="cookbook-button"
+              href="https://www.bushelsandfeasts.com"
+            >
+              <button>Buy eCookbook</button>
             </a>
+            <p style={{ fontSize: "14px" }}>
+              At this time, BUSHELS & FEASTS is only available in eBook form. An
+              eBook is a cookbook in an electronic format.
+            </p>
+            <p style={{ fontSize: "14px" }}>
+              Rather than having to go to the bookstore to purchase your
+              cookbook or wait for it to arrive in the mail, you can download it
+              to your computer, smartphone, or tablet INSTANTLY for easy access
+              whenever you are ready to shop and cook!
+            </p>
+            <p style={{ fontSize: "14px" }}>
+              After you purchase your eCookbook, you will receive an email with
+              an EPUB (electronic publication) file that you can download to all
+              of your devices and save for future use.
+            </p>
             <ul
               style={{ margin: "1rem 0rem 0rem 0rem", listStyleType: "none" }}
             >
@@ -422,9 +440,27 @@ const Cookbook = () => {
               <li>Tasting Guide</li>
             </ul>
             <br />
-            <a className="cookbook-button" href="/">
-              <button>Buy Cookbook</button>
+            <a
+              className="cookbook-button"
+              href="https://www.bushelsandfeasts.com"
+            >
+              <button>Buy eCookbook</button>
             </a>
+            <p style={{ fontSize: "14px" }}>
+              At this time, BUSHELS & FEASTS is only available in eBook form. An
+              eBook is a cookbook in an electronic format.
+            </p>
+            <p style={{ fontSize: "14px" }}>
+              Rather than having to go to the bookstore to purchase your
+              cookbook or wait for it to arrive in the mail, you can download it
+              to your computer, smartphone, or tablet INSTANTLY for easy access
+              whenever you are ready to shop and cook!
+            </p>
+            <p style={{ fontSize: "14px" }}>
+              After you purchase your eCookbook, you will receive an email with
+              an EPUB (electronic publication) file that you can download to all
+              of your devices and save for future use.
+            </p>
           </div>
         </Section>
         <Section style={{ width: "100vw", margin: "4rem auto 0rem auto" }}>
