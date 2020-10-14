@@ -23,7 +23,7 @@ class NavBarLinks extends Component {
       },
       {
         id: 3,
-        path: "/cookbook",
+        path: "https://www.bushelsandfeasts.com/",
         text: "cookbook",
       },
       {
