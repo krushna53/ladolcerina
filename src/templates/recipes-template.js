@@ -23,6 +23,7 @@ const Recipes = ({ data }) => {
     ingredients4,
     ingredientsList4,
     directions,
+    download,
   } = data.recipeItem
 
   return (
@@ -44,9 +45,12 @@ const Recipes = ({ data }) => {
           </BackgroundImage>
         </Section>
         <Section style={{ width: "80vw" }}>
-          <button>
-            Print <FaPrint />
-          </button>
+          <a href={download} download>
+            <button>
+              Print <FaPrint />
+            </button>
+          </a>
+
           <a href="https://www.bushelsandfeasts.com">
             <button className="no-print">Buy eCookbook</button>
           </a>
@@ -141,6 +145,7 @@ export const query = graphql`
       ingredients4
       ingredientsList4
       directions
+      download
     }
   }
 `
