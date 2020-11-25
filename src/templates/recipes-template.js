@@ -45,11 +45,16 @@ const Recipes = ({ data }) => {
           </BackgroundImage>
         </Section>
         <Section style={{ width: "80vw" }}>
-          <a href={download} download>
-            <button>
-              Print <FaPrint />
-            </button>
-          </a>
+          { download ? 
+            <a href={download} download>
+              <button>
+                Print <FaPrint />
+              </button>
+            </a>
+            :
+            null
+          }
+          
 
           <a href="https://www.bushelsandfeasts.com">
             <button className="no-print">Buy eCookbook</button>
