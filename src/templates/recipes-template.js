@@ -57,7 +57,7 @@ const Recipes = ({ data }) => {
           
 
           <a href="https://www.bushelsandfeasts.com">
-            <button className="no-print">Buy eCookbook</button>
+            <button className="no-print">Buy Cookbook</button>
           </a>
           <div className="box">
             <ul className="contentList">
