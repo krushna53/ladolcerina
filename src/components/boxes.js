@@ -92,7 +92,7 @@ const GalleryWrapper = styled.div`
       transition: 200ms ease-in;
       &:hover {
         cursor: pointer;
-        color: var(--main-color);
+        color: var(--mainColor);
       }
     }
   }
