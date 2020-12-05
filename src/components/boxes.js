@@ -53,7 +53,7 @@ const Boxes = () => {
       </div>
       <div className="item item-4">
         <Img fluid={data.img4.childImageSharp.fluid} />
-        <AniLink fade to="/cookbook">
+        <AniLink fade to="https://www.bushelsandfeasts.com/">
           <p className="info">cookbook</p>
         </AniLink>
       </div>
@@ -92,6 +92,7 @@ const GalleryWrapper = styled.div`
       transition: 200ms ease-in;
       &:hover {
         cursor: pointer;
+        color: var(--main-color);
       }
     }
   }
