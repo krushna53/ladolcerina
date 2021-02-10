@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-const BackgroundSection = ({ className, children }) => (
+const BackgroundSection = ({ className, children, title }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -37,7 +37,7 @@ const BackgroundSection = ({ className, children }) => (
               textAlign: "center",
             }}
           >
-            Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life
+            {title ? title :"Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life"}
           </p>
         </>
       )

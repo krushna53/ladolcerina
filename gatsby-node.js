@@ -18,6 +18,13 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      valentines: allValentinesJson {
+        edges {
+          node {
+            slug
+          }
+        }
+      }
     }
   `)
 
@@ -34,6 +41,15 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `recipes/${node.slug}`,
       component: path.resolve("./src/templates/recipes-template.js"),
+      context: {
+        slug: node.slug,
+      },
+    })
+  })
+  data.valentines.edges.forEach(({ node }) => {
+    createPage({
+      path: `valentines/${node.slug}`,
+      component: path.resolve("./src/templates/valentine-template.js"),
       context: {
         slug: node.slug,
       },

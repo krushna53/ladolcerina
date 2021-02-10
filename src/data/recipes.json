@@ -1,5 +1,53 @@
 [
   {
+    "id": "1",
+    "free": "yes",
+    "title": "VALENTINES DAY MENU",
+    "slug": "valentine",
+    "src": "../images/promos/Braised-Beef.jpg",
+    "summary": [
+      "Oh yes! One of the great one-pot wonders of the world, the classic, nourishing, and deeply comforting Coq au Vin. With layers upon layers of flavor from the tender, melt-in-your-mouth chicken to the rich and savory bacon, earthy mushrooms, sweet onions, and luscious wine. It tastes like it’s been on the stove all day, except that it wasn’t. Serve this classic French stew  on top of spaghetti squash polenta or with buttered potatoes to ensure you scoop up every last drop of that delicious sauce!",
+      "Prep time: 30 minutes",
+      "Cook time: 1 hour and 30 minutes",
+      "Serves 6"
+    ],
+    "ingredients1": "Ingredients:",
+    "ingredientsList1": [
+      "1 large chicken, 4 to 5 pounds, cut into 8 pieces",
+      "¼ cup olive oil",
+      "6 ounces bacon, sliced into lardons",
+      "1 onion, diced",
+      "2 celery stalks, diced",
+      "4 large carrots, sliced ¼ inch thick",
+      "1 pound button mushrooms, wiped clean and sliced",
+      "3 garlic cloves, sliced",
+      "½ cup brandy (optional, but recommended)",
+      "1 bottle of pinot noir",
+      "1 tablespoon tomato paste",
+      "1 cup chicken stock",
+      "3 thyme sprigs",
+      "2 tablespoons of butter",
+      "¼ cup chopped parsley",
+      "kosher salt and freshly ground pepper, to taste"
+    ],
+    "ingredients2": "",
+    "ingredientsList2": [""],
+    "ingredients3": "",
+    "ingredientsList3": [""],
+    "ingredients4": "",
+    "ingredientsList4": [""],
+    "directions": [
+      "Lay the chicken on a work surface and season generously with salt and pepper.",
+      "Cook the bacon in a large dutch oven, or a heavy stock pot over medium-high heat until brown and crispy, about 10 minutes. Remove the bacon with a slotted spoon and set aside.",
+      "Using the bacon fat in the pan, add half the chicken in a single layer and cook over medium-high heat. Turn the chicken every couple of minutes until golden brown on all sides, 8-10 minutes. Transfer to a plate and continue with the rest of the chicken pieces.",
+      "When the chicken is browned, pour out the bacon fat and add 3 tablespoons of fresh oil or butter. Stir in the onions, celery, carrots, mushrooms, and garlic. Season generously with salt and pepper. Cook over high heat, stirring frequently, until lightly caramelized, about 6-8 minutes.",
+      "Pour in the brandy (optional; this may flame up, so be careful!!), scrape up all the browned bits from the bottom of the pan and reduce the liquid by half. Add the red wine and reduce the liquid by two thirds. Stir in 1 tablespoon of tomato paste until combined.This entire process should take about 15 minutes.",
+      "Nestle the browned chicken pieces in the pan and pour in the chicken stock to three-quarters of the way up the sides of the chicken. Add more chicken stock if needed as well as the thyme sprigs. Bring the liquid back to a boil, reduce the heat to low and cover. Simmer gently for about 30 minutes, or until the chicken is completely cooked through.",
+      "Taste and adjust the seasoning with more salt and pepper as needed. If the sauce is still quite thin, remove the chicken and further reduce the liquid until thickened. Finish the sauce with 2 tablespoons of butter and garnish with fresh chopped parsley."
+    ],
+    "download": "https://ekm383.github.io/LDRDownloads/ChickenRedWineBaconOnionsMushroomsCoqauVinRouge.pdf"
+  },
+  {
     "id": "6",
     "free": "yes",
     "title": "Eggplant and Ricotta Tart with Fresh Herbs and Tomatoes",

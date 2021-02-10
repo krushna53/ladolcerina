@@ -32,7 +32,7 @@ const Recipe = ({ style }) => {
       {recipes.map(({ node }, index) => {
         return (
           <div className="recipe" key={index}>
-            <AniLink className="link" fade to={`/recipes/${node.slug}`}>
+            <AniLink className="link" fade to={node.slug === 'valentine' ? '/valentines':`/recipes/${node.slug}`}>
               <Img
                 style={style}
                 className="Img"
@@ -40,7 +40,7 @@ const Recipe = ({ style }) => {
               />
             </AniLink>
             <div className="recipe-title">
-              <AniLink fade to={`/recipes/${node.slug}`}>
+              <AniLink fade to={node.slug === 'valentine' ? '/valentines':`/recipes/${node.slug}`}>
                 <h4>{node.title}</h4>
               </AniLink>
             </div>

@@ -22,6 +22,11 @@ class NavBarLinks extends Component {
         text: "recipes",
       },
       {
+        id: 5,
+        path: "/valentines",
+        text: "valentine",
+      },
+      {
         id: 3,
         path: "https://www.bushelsandfeasts.com/",
         text: "cookbook",
