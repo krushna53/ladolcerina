@@ -22,22 +22,17 @@ class NavBarLinks extends Component {
         text: "recipes",
       },
       {
-        id: 5,
-        path: "/valentines",
-        text: "valentine",
-      },
-      {
         id: 3,
         path: "https://www.bushelsandfeasts.com/",
         text: "cookbook",
       },
       {
-        id: 3,
+        id: 4,
         path: "/promos/dessert-recipes",
         text: "Free eBook",
       },
       {
-        id: 4,
+        id: 5,
         path: "/contact",
         text: "contact",
       },
