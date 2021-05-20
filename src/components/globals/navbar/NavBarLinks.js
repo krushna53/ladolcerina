@@ -57,12 +57,12 @@ class NavBarLinks extends Component {
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/rina.thoma">
+            <a href="https://www.facebook.com/ladolcerina">
               <FaFacebookSquare />
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="https://www.pinterest.com/La_Dolce_Rina/_created/">
               <FaPinterest />
             </a>
           </li>
