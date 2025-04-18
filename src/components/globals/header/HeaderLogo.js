@@ -20,7 +20,7 @@ const BackgroundSection = ({ className, children, title }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <>
-          <BackgroundImage
+          {/* <BackgroundImage
             Tag="section"
             className={className}
             fluid={imageData}
@@ -38,7 +38,7 @@ const BackgroundSection = ({ className, children, title }) => (
             }}
           >
             {title ? title :"Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life"}
-          </p>
+          </p> */}
         </>
       )
     }}

@@ -237,23 +237,16 @@ const About = () => {
 
           <Section style={{ width: "80vw", margin: "4rem auto" }}>
             <p>
-              10 years ago, I was just a food-obsessed, cookbook-hoarder working in corporate sales and living the Army wife dream; following my physician husband to the ends of the earth and beyond. In the midst of yet another move, I was presented with an amazing opportunity to fulfill one of my life’s dreams - to go to culinary school. I found myself in one of the most exciting places to eat in America practically overnight.
+              15 years ago, I was just a food-obsessed, cookbook-hoarder working in corporate sales and living the Army wife dream; following my physician husband to the ends of the earth and beyond. In the midst of yet another move, I was presented with an amazing opportunity to fulfill one of my life’s dreams - to go to culinary school. I found myself in one of the most exciting places to eat in America practically overnight.
             </p>
             <p>
               At Tante Marie’s Cooking School in the heart of San Francisco, I learned the fundamentals of French cuisine and ate my way through the local food scene. Classic mother sauces and soufflés by day, San Francisco foodie hotspots by night. I was in heaven!
-
             </p>
             <p>
-              Just a few months after graduation, my husband and I moved to Germany, and for the next 3 ½ years, we ate our way through almost every country in Europe. I met chefs, winemakers, cheesemakers, and all sorts of farmers, and it was at the Le Cordon Bleu in Paris that I fell in love with fresh, local, seasonal, market cuisine. Through these experiences, I was inspired to write my first cookbook.
+              Just a few months after graduation, my husband and I moved to Germany, and for the next 4 years, we ate our way through almost every country in Europe. I met chefs, winemakers, cheesemakers, and all sorts of farmers, and it was at the Le Cordon Bleu in Paris that I fell in love with fresh, local, seasonal, market cuisine. Through these experiences, I was inspired to write my first cookbook.
             </p>
             <p>
-              When I ditched the gluten and grains to lose the 25 pounds I gained in culinary school, I not only lost weight, but my husband and I achieved a level of health we never had before. My painful, chronic, cystic acne disappeared and my husband's seemingly incurable acid reflux and eczema vanished. We looked and felt better than ever and it was then that I decided to revamp my culinary point of view and master the art of healthy, gluten-free home cooking.
-            </p>
-            <p>
-              I have taken cooking classes all over the world including Italy, France, Spain, South Korea, Japan, Thailand, and Vietnam. While once a private chef, I’m most passionate about teaching people how to transform fresh, quality ingredients into simple, healthy, delicious food.
-            </p>
-            <p>
-              I created this platform with a goal to share delicious recipes inspired by my Italian roots and life abroad. I’ve had a pretty sweet life and I’m excited to share what I’ve learned with all of you. {" "}
+              I have taken cooking classes all over the world including Italy, France, Spain, South Korea, Japan, Thailand, and Vietnam. I’m a food enthusiast turned cookbook author, private chef and advocate for meaningful causes. With a background rooted in global culinary traditions, I strive to create memorable dining experiences that bring people together. I live in Gulf Breeze, FL, with my husband, David, and our two daughters, Sophia and Elena, who inspire me daily.
             </p>
             <p>Welcome and enjoy!</p>
             <p>xo,</p>
@@ -262,11 +255,11 @@ const About = () => {
                 className="rina-image"
                 fluid={data.rina2.childImageSharp.fluid}
             />
-            <p>
+            {/* <p>
               PS. I live in Honolulu, Hawaii with my husband Dave and two little girls, Sophia and Elena. I love to eat, but not nearly as much as I love them.
-            </p>
+            </p> */}
 
-            <h2>The Early Years</h2>
+            {/* <h2>The Early Years</h2>
             <Img
                 className="rina-image"
                 fluid={data.rina3.childImageSharp.fluid}
@@ -440,10 +433,7 @@ const About = () => {
             />
             <p>Unfortunately, our “fast-food” culture here in the U.S. has conditioned us to believe that food should always be fast, cheap, and easy, and that cooking is laborious and hard . A culture that wants us to believe that we don’t have the time or money to sit down together and share good, homemade food. </p>
             <p>This did not sit well with my “food and cooking is life” Italian upbringing. I felt compelled to write a book that would encourage people to cook together and share good food and wine with the people they love. To appreciate quality ingredients, and the time spent in the kitchen and at the table. </p>
-            {/* <Img
-            className="rina-image"
-            fluid={data.rina27.childImageSharp.fluid}
-          /> */}
+            
             <p>I wanted my readers to see the faces of true artisans and organic farmers, the people who are working so incredibly hard to create quality products free from pesticides, antibiotics, hormones etc. Hoping people in turn would be inspired and excited to visit their local farmers market a little more often and transform BUSHELS of simple ingredients into delicious, everyday FEASTS. </p>
             <Img
                 className="rina-image"
@@ -453,6 +443,7 @@ const About = () => {
                 className="rina-image"
                 fluid={data.rina29.childImageSharp.fluid}
             />
+             */}
 
           </Section>
         </AboutWrapper>
