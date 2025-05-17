@@ -48,3 +48,7 @@ a {
 #heading-196 > a > div > div {
   background-color: brown;
 }
+.HeaderLogo__StyledBackgroundSection-UEpJg::before{
+  z-index: -101;
+  background-image: url("/images/Rina-Logo.png") !important;
+}

@@ -11,7 +11,7 @@ import Section from "../components/globals/section/Section"
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      rina1: file(relativePath: { eq: "La-Dolce-Rina-About.jpg" }) {
+      rina1: file(relativePath: { eq: "la-dolce-rina-cookbook.jpg" }) {
         childImageSharp {
           fluid(quality: 80, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
@@ -464,7 +464,7 @@ const AboutWrapper = styled.div`
     color: #000;
   }
  .banner-img {
-  width: 80%;
+  width: 400px;
   margin: 3% auto;
  }
   .rina-image {

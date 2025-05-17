@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql, StaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
-const BackgroundSection = ({ className, children, title }) => (
+const BackgroundSection = ({ className, children }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -20,7 +20,7 @@ const BackgroundSection = ({ className, children, title }) => (
       const imageData = data.desktop.childImageSharp.fluid
       return (
         <>
-          {/* <BackgroundImage
+          <BackgroundImage
             Tag="section"
             className={className}
             fluid={imageData}
@@ -28,7 +28,7 @@ const BackgroundSection = ({ className, children, title }) => (
           >
             {children}
           </BackgroundImage>
-          <p
+          {/* <p
             style={{
               fontSize: "20px",
               margin: "0 auto",
@@ -37,13 +37,14 @@ const BackgroundSection = ({ className, children, title }) => (
               textAlign: "center",
             }}
           >
-            {title ? title :"Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life"}
+            Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life
           </p> */}
         </>
       )
     }}
   />
 )
+
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
@@ -52,5 +53,6 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-repeat: no-repeat;
   background-size: 300px;
 `
+
 
 export default StyledBackgroundSection
