@@ -13,7 +13,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -21,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -83,7 +83,6 @@ module.exports = {
         // Any additional optional fields
         sampleRate: 5,
         siteSpeedSampleRate: 10,
-        cookieDomain: "",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
