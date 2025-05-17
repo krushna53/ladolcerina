@@ -464,7 +464,7 @@ const AboutWrapper = styled.div`
     color: #000;
   }
  .banner-img {
-  width: 60%;
+  width: 400px;
   margin: 3% auto;
  }
   .rina-image {
