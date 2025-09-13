@@ -59,7 +59,7 @@ const Boxes = () => {
       </div>
       <div className="item item-3">
         <Img fluid={data.img3.childImageSharp.fluid} />
-        <AniLink fade to="/promos/dessert-recipes">
+        <AniLink fade>
           <p className="info">free dessert ebook</p>
         </AniLink>
       </div>
