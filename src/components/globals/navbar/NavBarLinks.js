@@ -26,11 +26,11 @@ class NavBarLinks extends Component {
         path: "https://www.bushelsandfeasts.com/",
         text: "cookbook",
       },
-      {
-        id: 4,
-        path: "/promos/dessert-recipes",
-        text: "Free eBook",
-      },
+      // {
+      //   id: 4,
+      //   path: "/promos/dessert-recipes",
+      //   text: "Free eBook",
+      // },
       {
         id: 5,
         path: "/contact",
