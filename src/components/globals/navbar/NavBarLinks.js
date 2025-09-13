@@ -31,11 +31,11 @@ class NavBarLinks extends Component {
       //   path: "/promos/dessert-recipes",
       //   text: "Free eBook",
       // },
-      {
-        id: 5,
-        path: "/contact",
-        text: "contact",
-      },
+      // {
+      //   id: 5,
+      //   path: "/contact",
+      //   text: "contact",
+      // },
     ],
   }
   render() {
