@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaInstagram, FaFacebookSquare, FaPinterest } from "react-icons/fa"
+import { FaInstagram, FaFacebookSquare, FaPinterest, FaEnvelope } from "react-icons/fa"
 
 class NavBarLinks extends Component {
   state = {
@@ -64,6 +64,11 @@ class NavBarLinks extends Component {
           <li>
             <a href="https://www.pinterest.com/La_Dolce_Rina/_created/">
               <FaPinterest />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:rina.thoma@gmail.com" target="_blank" rel="noopener noreferrer">
+              <FaEnvelope />
             </a>
           </li>
         </ul>
