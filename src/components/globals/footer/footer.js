@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import { FaInstagram, FaFacebookSquare, FaPinterest } from "react-icons/fa"
+import { FaInstagram, FaFacebookSquare, FaPinterest, FaEnvelope } from "react-icons/fa"
 
 class Footer extends Component {
   state = {
@@ -18,7 +18,12 @@ class Footer extends Component {
       {
         id: 1,
         icon: <FaPinterest className="icon pinterest-icon" />,
-        path: "#",
+        path: "https://www.pinterest.com/La_Dolce_Rina/_created/",
+      },
+      {
+        id: 3,
+        icon: <FaEnvelope className="icon email-icon" />,
+        path: "mailto:rina.thoma@gmail.com",
       },
     ],
   }
