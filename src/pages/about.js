@@ -18,7 +18,7 @@ const About = () => {
           }
         }
       }
-      rina2: file(relativePath: { eq: "la-dolce-rina-family.jpg" }) {
+      rina2: file(relativePath: { eq: "IMG_041.jpeg" }) {
         childImageSharp {
           fluid(quality: 80, maxWidth: 1920) {
             ...GatsbyImageSharpFluid
